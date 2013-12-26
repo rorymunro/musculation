@@ -7,4 +7,6 @@ class StaticPagesController < ApplicationController
 
   def forum
   end
+  def about
+  end
 end
