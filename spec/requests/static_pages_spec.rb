@@ -1,6 +1,8 @@
 require 'spec_helper'
 
 describe "Static Pages" do
+
+  let(:base_title) { "Musculation" }
   	
   	describe "Home page" do
 
@@ -10,7 +12,7 @@ describe "Static Pages" do
  end
       it "should have a title avec musculation" do
         visit '/static_pages/home'
-        expect(page).to have_title("Musculation | Home")
+        expect(page).to have_title("#{base_title} | Home")
       end
   end
 
@@ -23,7 +25,7 @@ describe "Static Pages" do
 end
 it "should have a title avec regime, musculation" do
         visit '/static_pages/regime'
-        expect(page).to have_title("Musculation | Regime")
+        expect(page).to have_title("#{base_title} | Regime")
       end
   end
 
@@ -36,7 +38,7 @@ it "should have a title avec regime, musculation" do
     end
     it "should have a title avec forum, musculation" do
         visit '/static_pages/forum'
-        expect(page).to have_title("Musculation | Forum")
+        expect(page).to have_title("#{base_title} | Forum")
       end
   end
 describe "about page" do
@@ -48,7 +50,7 @@ describe "about page" do
     end
     it "should have a title avec about, musculation" do
         visit '/static_pages/about'
-        expect(page).to have_title("Musculation | About")
+        expect(page).to have_title("#{base_title} | About")
       end
   end
 end
