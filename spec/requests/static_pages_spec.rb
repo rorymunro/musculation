@@ -1,5 +1,6 @@
 require 'spec_helper'
 
+<<<<<<< HEAD
 describe "Static Pages" do
 
   let(:base_title) { "Musculation" }
@@ -15,10 +16,16 @@ describe "Static Pages" do
         expect(page).to have_title("#{base_title} | Home")
       end
   end
+=======
+describe "Static pages" do
+>>>>>>> filling-in-layout
 
+subject { page }
 
-  describe "Regime page" do
+  describe "Home page" do
+    before { visit root_path }
 
+<<<<<<< HEAD
   		it "should have the content 'regime'" do
   			visit '/static_pages/regime'
   			expect(page).to have_content('regime')
@@ -52,5 +59,32 @@ describe "about page" do
         visit '/static_pages/about'
         expect(page).to have_title("#{base_title} | About")
       end
+=======
+    it { should have_content('Musculation') }
+    it { should have_title(full_title('')) }
+    it { should_not have_title('| Home') }
   end
+
+  describe "Forum page" do
+    before { visit forum_path }
+
+    it { should have_content('Forum') }
+    it { should have_title(full_title('Forum')) }
+  end
+
+  describe "About page" do
+    before { visit about_path }
+
+    it { should have_content('About') }
+    it { should have_title(full_title('About')) }
+>>>>>>> filling-in-layout
+  end
+
+  describe "Regime page" do
+    before { visit regime_path }
+
+    it { should have_content('Regime') }
+    it { should have_title(full_title('Regime')) }
+  end
+
 end

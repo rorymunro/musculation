@@ -1,7 +1,11 @@
-<% provide(:title, 'Home') %>
+
+<div class="center hero-unit">
 <h1>musculation App</h1>
-<p>
+<h2>
   Home page pour 
   <a href="http://google.com">musculation</a>
-  
-</p>
+  </h2>
+  <%= link_to "Sign up", signup_path, class: "btn btn-large btn-primary" %>
+</div>
+
+<%= link_to image_tag("arny.jpeg", alt: "Muscles!"), 'http://lovelyjob.co.nf' %>
