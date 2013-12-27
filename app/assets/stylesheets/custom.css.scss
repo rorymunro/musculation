@@ -58,19 +58,24 @@ p {
 
 
 /* header */
+.navbar-inner {
+  //background: #DBF6FF;
+}
+
 
 #logo {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: white;
+  color: #25549B;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
   line-height: 1;
   &:hover {
-    color: white;
+    color: $grayMediumLight;
+    text-shadow: 0px 2px 3px #555;
     text-decoration: none;
   }
 }
@@ -78,7 +83,7 @@ p {
 /* footer */
 
 footer {
-  margin-top: 45px;
+  margin-top: 25px;
   padding-top: 5px;
   border-top: 1px solid $grayMediumLight;
   color: $grayLight;
@@ -98,5 +103,41 @@ footer {
       float: left;
       margin-left: 10px;
     }
+  }
+}
+
+/*image of arny*/
+#arny {
+  
+  
+  width: 580px;
+  height: 310px;
+  -webkit-box-shadow: 0px 5px 10px #4d4d4d;
+    -moz-box-shadow: 0px 5px 10px #4d4d4d;
+    box-shadow: 0px 5px 10px #4d4d4d;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -khtml-border-radius: 8px;  
+    border-radius: 8px;
+    border:solid white 2px;
+    overflow: hidden;
+}
+
+/* Hero unit*/
+.hero-unit {
+  
+  background-color: #55CFFF;
+  padding-top:18px;
+  padding-bottom: 18px;
+  
+  h1 {
+
+  margin-top: 0px;
+  }
+  h2 {
+  margin-bottom: 16px;
+  }
+  .btn {
+ 
   }
 }
