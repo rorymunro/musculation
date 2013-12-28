@@ -12,7 +12,12 @@ html {
 
 body {
   padding-top: 60px;
+  /* background*/
+
+background-image:url('vertical_cloth.png');
+
 }
+
 
 section {
   overflow: auto;
@@ -56,11 +61,6 @@ p {
   line-height: 1.7em;
 }
 
-
-/* header */
-.navbar-inner {
-  //background: #DBF6FF;
-}
 
 
 #logo {
@@ -123,6 +123,9 @@ footer {
     overflow: hidden;
 }
 
+
+
+
 /* Hero unit*/
 .hero-unit {
   
@@ -141,3 +144,4 @@ footer {
  
   }
 }
+
