@@ -53,12 +53,13 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $grayLight;
+  color: white;
 }
 
 p {
   font-size: 1.1em;
   line-height: 1.7em;
+
 }
 
 
@@ -145,3 +146,11 @@ footer {
   }
 }
 
+.row-fluid {
+  color:pink;
+  text-align: center;
+  .span3 {
+  margin-top: 5%;
+  }
+
+  }
