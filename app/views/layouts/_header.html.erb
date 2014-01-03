@@ -1,16 +1,18 @@
-<header class="navbar navbar-fixed-top navbar", id= "header">
+<header class="navbar-custom navbar-fixed-top navbar">
+  
   <div class="navbar-inner">
     <div class="container">
       <%= link_to "Musculation", root_path, id: "logo" %>
       <nav>
         <ul class="nav pull-right">
-          <li><%= link_to "Home",    root_path %></li>
-          <li><%= link_to "Regime",    regime_path %></li>
-          <li><%= link_to "Forum", forum_path %></li>
-          <li><%= link_to "About", about_path %></li>
-          <li><%= link_to "Sign up", signup_path %></li>
+          <li><%= link_to "Home",    root_path, id: "navTop" %></li>
+          <li><%= link_to "Regime",    regime_path, id: "navTop" %></li>
+          <li><%= link_to "Forum", forum_path, id: "navTop" %></li>
+          <li><%= link_to "About", about_path, id: "navTop" %></li>
+          <li><%= link_to "Sign up", signup_path, id: "navTop" %></li>
         </ul>
       </nav>
     </div>
   </div>
+
 </header>

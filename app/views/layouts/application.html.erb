@@ -7,14 +7,20 @@
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 <%= render 'layouts/shim' %>
+
   </head>
   <body>
-   <%= render 'layouts/header' %>
-      </div>
-    </header>
+   
+   <%= render 'layouts/header'%>
+      
+    
     <div class="container">
       <%= yield %>
       <%= render 'layouts/footer' %>
     </div>
+    <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+                <script src = "js/bootstrap.js"></script>
+
   </body>
+
 </html>

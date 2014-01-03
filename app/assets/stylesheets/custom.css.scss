@@ -16,7 +16,12 @@ body {
 
 background-image:url('vertical_cloth.png');
 
+
 }
+#mycarousel {
+  
+}
+
 
 
 section {
@@ -61,14 +66,22 @@ p {
   line-height: 1.7em;
 
 }
+#navTop {
+  color: #60a5bf;
+  &:hover{
+  color: $grayMediumLight;
+    text-shadow: 0px 2px 3px #555;
+    text-decoration: none;
 
+  }
+}
 
 
 #logo {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #25549B;
+  color: #848997;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
@@ -87,9 +100,9 @@ footer {
   margin-top: 25px;
   padding-top: 5px;
   border-top: 1px solid $grayMediumLight;
-  color: $grayLight;
+  color: #ffbf7a;
   a {
-    color: $gray;
+    color: #9dffc2;
     &:hover {
       color: $grayDarker;
     }
@@ -100,9 +113,11 @@ footer {
   ul {
     float: right;
     list-style: none;
+
     li {
       float: left;
       margin-left: 10px;
+
     }
   }
 }
@@ -130,24 +145,34 @@ footer {
 /* Hero unit*/
 .hero-unit {
   
-  background-color: #55CFFF;
+  background-color: #898c97;
   padding-top:18px;
   padding-bottom: 18px;
+  
   
   h1 {
 
   margin-top: 0px;
+  color:#1f2023;
+  
   }
   h2 {
   margin-bottom: 16px;
+  color: #2d2512;
+  
+  }
+  h3 {
+  color: #809295;
+
   }
   .btn {
+  background: #a29b8b;
  
   }
 }
 
 .row-fluid {
-  color:pink;
+  color: #ffaa4e;
   text-align: center;
   .span3 {
   margin-top: 5%;
