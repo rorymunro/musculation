@@ -6,8 +6,12 @@ class StaticPagesController < ApplicationController
   end
 
   def forum
+  	
   end
   def about
 
+  end
+
+  def monregime
   end
 end
