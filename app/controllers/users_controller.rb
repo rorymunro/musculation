@@ -10,6 +10,7 @@ end
 
 def show
         @user = User.find(params[:id])
+        @backs = @user.backs.paginate(page: params[:page])
   end
 
 
@@ -22,6 +23,10 @@ def destroy
   flash[:success] = "User deleted."
   redirect_to users_url
 end
+
+  def new
+    @user = User.new
+  end
 
 
 
@@ -58,12 +63,7 @@ end
                                    :password_confirmation)
     end
 
-    def signed_in_user
-      unless signed_in?
-        store_location
-      redirect_to signin_url, notice: "Please sign in." unless signed_in?
-    end
-  end
+    
 
      def correct_user
       @user = User.find(params[:id])

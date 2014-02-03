@@ -11,7 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140202130315) do
+ActiveRecord::Schema.define(version: 20140202180536) do
+
+  create_table "backs", force: true do |t|
+    t.integer  "pull_up"
+    t.integer  "deadlift"
+    t.integer  "row"
+    t.integer  "bicep_curl"
+    t.integer  "hammer"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "backs", ["user_id", "created_at"], name: "index_backs_on_user_id_and_created_at"
 
   create_table "users", force: true do |t|
     t.string   "name"

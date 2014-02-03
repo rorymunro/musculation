@@ -1,4 +1,18 @@
+<% if signed_in? %>
+<div class="center hero-unit">
+<h1>Musculation App</h1>
+<h2>
+  Home page pour 
+  <a href="http://google.com">musculation</a>
+  </h2>
+  
+</div>
+	<div class= "center">
+<%= link_to image_tag("arnold.jpg", alt: "MUSC", id: "arny"), 'http://lovelyjob.co.nf' %>
 
+</div>
+	
+<% else %>
 <div class="center hero-unit">
 <h1>Musculation App</h1>
 <h2>
@@ -11,3 +25,4 @@
 <%= link_to image_tag("arnold.jpg", alt: "MUSC", id: "arny"), 'http://lovelyjob.co.nf' %>
 
 </div>
+<% end %>

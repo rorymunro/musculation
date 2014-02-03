@@ -1,0 +1,12 @@
+<li>
+  <span class="content"><%= back.content %></span>
+  <span class="timestamp">
+    Posté le <%= feed_item.created_at.strftime("%d, %b, %Y") %>.
+  </span>
+</li>
+<% if current_user?(back.user) %>
+    <%= link_to "delete", back, method: :delete,
+                                     data: { confirm: "You sure?" },
+                                     title: back %>
+  <% end %>
+</li>

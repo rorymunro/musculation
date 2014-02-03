@@ -1,0 +1,22 @@
+<%= form_for(@back) do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+  <div class="field">
+    <%= f.label :pull_up %>
+      <%= f.number_field :pull_up %>
+
+      <%= f.label :deadlift %>
+      <%= f.number_field :deadlift %>
+
+      <%= f.label :row %>
+      <%= f.number_field :row %>
+  
+      <%= f.label :bicep_curl %>
+      <%= f.number_field :bicep_curl %>
+  
+      <%= f.label :hammer %>
+      <%= f.number_field :hammer %>
+  
+  
+  </div>
+  <%= f.submit "Post", class: "btn btn-large btn-primary" %>
+<% end %>
