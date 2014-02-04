@@ -1,0 +1,12 @@
+<li>
+  <span class="content"><%= poitrine.content %></span>
+  <span class="timestamp">
+    Posté le <%= feedp_item.created_at.strftime("%d, %b, %Y") %>.
+  </span>
+</li>
+<% if current_user?(poitrine.user) %>
+    <%= link_to "delete", poitrine, method: :delete,
+                                     data: { confirm: "You sure?" },
+                                     title: poitrine %>
+  <% end %>
+</li>

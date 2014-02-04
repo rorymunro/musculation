@@ -1,17 +1,22 @@
 Musculation::Application.routes.draw do
   
+  
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
   resources :backs, only: [:create, :destroy]
+  resources :poitrines, only: [:create, :destroy]
+
   root  'static_pages#home'
   match '/signup', to: 'users#new', via: 'get'
   match '/signin',  to: 'sessions#new',         via: 'get'
   match '/signout', to: 'sessions#destroy',     via: 'delete'
   match '/about',   to: 'static_pages#about',   via: 'get'
-   match '/forum',    to: 'static_pages#forum',    via: 'get'
+  match '/forum',    to: 'static_pages#forum',    via: 'get'
   match '/regime',   to: 'static_pages#regime',   via: 'get'
   match '/standard',   to: 'static_pages#standard',   via: 'get'
-   match '/dos',   to: 'static_pages#dos',   via: 'get'
+  match '/dos',   to: 'static_pages#dos',   via: 'get'
+  match '/poitrin',   to: 'static_pages#poitrin',   via: 'get'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

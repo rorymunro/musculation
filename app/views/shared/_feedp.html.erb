@@ -1,0 +1,6 @@
+<% if @feedp_items.any? %>
+  <ol class="poitrines">
+    <%= render partial: 'shared/feedp_item', collection: @feedp_items %>
+  </ol>
+  <%= will_paginate @feedp_items %>
+<% end %>

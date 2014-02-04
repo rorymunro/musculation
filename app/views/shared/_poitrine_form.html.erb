@@ -1,0 +1,22 @@
+<%= form_for(@poitrine) do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+  <div class="field">
+    <%= f.label :developpe_couche %>
+      <%= f.number_field :developpe_couche %>
+
+      <%= f.label :developpe_incline %>
+      <%= f.number_field :developpe_incline %>
+
+      <%= f.label :ecarte_couche %>
+      <%= f.number_field :ecarte_couche %>
+  
+      <%= f.label :ecarte_incline %>
+      <%= f.number_field :ecarte_incline %>
+  
+      <%= f.label :haltere_au_front %>
+      <%= f.number_field :haltere_au_front %>
+  
+  
+  </div>
+  <%= f.submit "Post", class: "btn btn-large btn-primary" %>
+<% end %>
