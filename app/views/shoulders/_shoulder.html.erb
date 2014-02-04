@@ -1,0 +1,12 @@
+<li>
+  <span class="content"><%= shoulder.content %></span>
+  <span class="timestamp">
+    Posté le <%= feeds_item.created_at.strftime("%d, %b, %Y") %>.
+  </span>
+</li>
+<% if current_user?(shoulder.user) %>
+    <%= link_to "delete", shoulder, method: :delete,
+                                     data: { confirm: "Vous etes sure?" },
+                                     title: shoulder %>
+  <% end %>
+</li>

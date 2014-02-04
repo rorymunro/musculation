@@ -28,5 +28,11 @@ end
 
   end
 end
+def cuisses_epaules
+    if signed_in?
+    @shoulder = current_user.shoulders.build 
+    @feeds_items = current_user.feeds.paginate(page: params[:page])
 
+  end
+end
 end

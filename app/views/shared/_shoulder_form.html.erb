@@ -1,0 +1,20 @@
+<%= form_for(@shoulder) do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+  <div class="field">
+    <%= f.label :squat %>
+      <%= f.number_field :squat %>
+
+      <%= f.label :rowing_menton %>
+      <%= f.number_field :rowing_menton %>
+
+      <%= f.label :elevations_devant %>
+      <%= f.number_field :elevations_devant %>
+  
+      <%= f.label :rowing_courbe %>
+      <%= f.number_field :rowing_courbe %>
+  
+  
+  
+  </div>
+  <%= f.submit "Post", class: "btn btn-large btn-primary" %>
+<% end %>

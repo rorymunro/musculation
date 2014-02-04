@@ -1,6 +1,8 @@
 class User < ActiveRecord::Base
 	has_many :poitrines, dependent: :destroy
 	has_many :backs, dependent: :destroy
+	has_many :shoulders, dependent: :destroy
+
 	before_save { self.email = email.downcase }
 	before_create :create_remember_token
 validates :name,  presence: true, length: { maximum: 50 }
@@ -15,6 +17,9 @@ def feed
 end
 def feedp
 	Poitrine.where("user_id = ?", id)
+end
+def feeds
+	Shoulder.where("user_id = ?", id)
 end
 
 

@@ -6,7 +6,8 @@
   <%= link_to "view my profile", current_user %>
 </span>
 <span>
-  <%= pluralize(current_user.backs.count, "back") %>
-    <%= pluralize(current_user.poitrines.count, "poitrine") %>
+  <%= pluralize(current_user.backs.count, "back") %></br>
+    <%= pluralize(current_user.poitrines.count, "poitrine") %></br>
+    <%= pluralize(current_user.shoulders.count, "shoulder") %>
 
 </span>
