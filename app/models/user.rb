@@ -3,6 +3,7 @@ class User < ActiveRecord::Base
 	has_many :backs, dependent: :destroy
 	has_many :shoulders, dependent: :destroy
     has_many :day1s, dependent: :destroy
+    has_many :day2s, dependent: :destroy
 
 
 	before_save { self.email = email.downcase }
@@ -26,7 +27,9 @@ end
 def feed1
 	Day1.where("user_id = ?", id)
 end
-
+def feed2
+	Day2.where("user_id = ?", id)
+end
 
 
 def User.new_remember_token

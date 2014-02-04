@@ -42,4 +42,12 @@ end
 
   end
 end
+
+def jour2
+    if signed_in?
+    @day2 = current_user.day2s.build 
+    @feed2_items = current_user.feed2.paginate(page: params[:page])
+
+  end
+end
 end

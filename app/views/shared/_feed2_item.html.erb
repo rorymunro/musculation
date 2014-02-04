@@ -1,0 +1,17 @@
+<li id="<%= feed2_item.id %>">
+  
+  <span class="timestamp">
+    Posté le <%= feed2_item.created_at.strftime("%d, %b, %Y") %>.
+  </span></br>
+  <div class= "tings">
+  <span class="pull_up">Pull up:   <%= feed2_item.pull_up %>kgs</span></br>
+  <span class="developpe_nuque">Developpe nuque:   <%= feed2_item.developpe_nuque %>kgs</span></br>
+  <span class="developpe_incline">Developpe incline:   <%= feed2_item.developpe_incline %>kgs</span></br>
+ 
+ </div>
+ <% if current_user?(feed2_item.user) %>
+    <%= link_to "delete", feed2_item, method: :delete,
+                                     data: { confirm: "vous etes sure?" },
+                                     title: feed2_item %>
+  <% end %>
+</li>
