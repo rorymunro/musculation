@@ -4,6 +4,7 @@ class User < ActiveRecord::Base
 	has_many :shoulders, dependent: :destroy
     has_many :day1s, dependent: :destroy
     has_many :day2s, dependent: :destroy
+    has_many :day3s, dependent: :destroy
 
 
 	before_save { self.email = email.downcase }
@@ -29,6 +30,9 @@ def feed1
 end
 def feed2
 	Day2.where("user_id = ?", id)
+end
+def feed3
+	Day3.where("user_id = ?", id)
 end
 
 

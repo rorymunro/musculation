@@ -50,4 +50,11 @@ def jour2
 
   end
 end
+def jour3
+    if signed_in?
+    @day3 = current_user.day3s.build 
+    @feed3_items = current_user.feed3.paginate(page: params[:page])
+
+  end
+end
 end

@@ -8,6 +8,7 @@ Musculation::Application.routes.draw do
   resources :shoulders, only: [:create, :destroy]
   resources :day1s, only: [:create, :destroy]
   resources :day2s, only: [:create, :destroy]
+  resources :day3s, only: [:create, :destroy]
 
   root  'static_pages#home'
   match '/signup', to: 'users#new', via: 'get'
@@ -22,6 +23,7 @@ Musculation::Application.routes.draw do
   match '/cuisses_epaules',   to: 'static_pages#cuisses_epaules',   via: 'get'
   match '/jour1',   to: 'static_pages#jour1',   via: 'get'
   match '/jour2',   to: 'static_pages#jour2',   via: 'get'
+  match '/jour3',   to: 'static_pages#jour3',   via: 'get'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

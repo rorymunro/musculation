@@ -15,6 +15,7 @@ def show
     @shoulders = @user.shoulders.paginate(page: params[:page])
     @day1s = @user.day1s.paginate(page: params[:page])
     @day2s = @user.day2s.paginate(page: params[:page])
+    @day3s = @user.day3s.paginate(page: params[:page])
 
   end
 
