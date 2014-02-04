@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140204152149) do
+ActiveRecord::Schema.define(version: 20140204163327) do
 
   create_table "backs", force: true do |t|
     t.integer  "pull_up"
@@ -25,6 +25,17 @@ ActiveRecord::Schema.define(version: 20140204152149) do
   end
 
   add_index "backs", ["user_id", "created_at"], name: "index_backs_on_user_id_and_created_at"
+
+  create_table "day1s", force: true do |t|
+    t.integer  "squat"
+    t.integer  "souleve_de_terre"
+    t.integer  "developpe_couche"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "day1s", ["user_id", "created_at"], name: "index_day1s_on_user_id_and_created_at"
 
   create_table "poitrines", force: true do |t|
     t.integer  "developpe_couche"

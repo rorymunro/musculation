@@ -2,6 +2,8 @@ class User < ActiveRecord::Base
 	has_many :poitrines, dependent: :destroy
 	has_many :backs, dependent: :destroy
 	has_many :shoulders, dependent: :destroy
+    has_many :day1s, dependent: :destroy
+
 
 	before_save { self.email = email.downcase }
 	before_create :create_remember_token
@@ -21,6 +23,10 @@ end
 def feeds
 	Shoulder.where("user_id = ?", id)
 end
+def feed1
+	Day1.where("user_id = ?", id)
+end
+
 
 
 def User.new_remember_token

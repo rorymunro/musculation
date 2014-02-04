@@ -33,6 +33,13 @@ def cuisses_epaules
     @shoulder = current_user.shoulders.build 
     @feeds_items = current_user.feeds.paginate(page: params[:page])
 
+end
+end
+  def jour1
+    if signed_in?
+    @day1 = current_user.day1s.build 
+    @feed1_items = current_user.feed1.paginate(page: params[:page])
+
   end
 end
 end

@@ -1,0 +1,17 @@
+<%= form_for(@day1) do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+  <div class="field">
+    <%= f.label :squat %>
+      <%= f.number_field :squat %>
+
+      <%= f.label :souleve_de_terre %>
+      <%= f.number_field :souleve_de_terre %>
+
+      <%= f.label :developpe_couche %>
+      <%= f.number_field :developpe_couche %>
+  
+  
+  
+  </div>
+  <%= f.submit "Post", class: "btn btn-large btn-primary" %>
+<% end %>

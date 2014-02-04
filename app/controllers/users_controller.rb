@@ -13,6 +13,7 @@ def show
         @backs = @user.backs.paginate(page: params[:page])
     @poitrines = @user.poitrines.paginate(page: params[:page])
     @shoulders = @user.shoulders.paginate(page: params[:page])
+    @day1s = @user.day1s.paginate(page: params[:page])
 
   end
 
