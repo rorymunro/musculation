@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140204182857) do
+ActiveRecord::Schema.define(version: 20140218152734) do
 
   create_table "backs", force: true do |t|
     t.integer  "pull_up"
@@ -87,12 +87,15 @@ ActiveRecord::Schema.define(version: 20140204182857) do
   create_table "users", force: true do |t|
     t.string   "name"
     t.string   "email"
-    t.decimal  "weight"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "password_digest"
     t.string   "remember_token"
-    t.boolean  "admin",           default: false
+    t.boolean  "admin"
+    t.integer  "poid"
+    t.string   "location"
+    t.integer  "age"
+    t.integer  "taille"
   end
 
 end

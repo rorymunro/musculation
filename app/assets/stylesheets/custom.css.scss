@@ -32,7 +32,7 @@ background-image:url('vertical_cloth.png');
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 4px;
-  border-radius: 1px;
+  border-radius: 2px;
 
 }
 
@@ -210,10 +210,33 @@ footer {
 
   }
   }
+  .span6{
+  color: #1d783f;
+  font:25px verdana;
+  margin-bottom: 10px;
 
+
+h1{
+  font:bold 50px tahoma;
+  margin-bottom: 0px;
+  color: #1f2c71;
+    text-shadow: 0px 1px 2px gray;
+
+}
   }
 
 
+  }
+
+aside{
+h3{
+  font:bold 22px verdana;
+  color: #1d783f;
+  margin-top: 50px;
+  }
+
+  
+}
 
 .debug_dump {
   clear: both;
@@ -225,44 +248,34 @@ footer {
 
 /* sidebar */
 
-aside {
-  section {
-    padding: 10px 0;
-    border-top: 1px solid $grayLighter;
-    &:first-child {
-      border: 0;
-      padding-top: 0;
-    }
-    span {
-      display: block;
-      margin-bottom: 3px;
-      line-height: 1;
-    }
-    h1 {
-      font-size: 1.4em;
-      text-align: left;
-      letter-spacing: -1px;
-      margin-bottom: 3px;
-      margin-top: 0px;
-    }
-    h2 {
-      font-size: 1.4em;
-      text-align: left;
-      letter-spacing: -1px;
-      margin-bottom: 3px;
-      margin-top: 0px;
-      color:black;
-    }
-  }
-}
 
 .gravatar {
   float: left;
-  margin-right: 10px;
-  width: 90px;
+  margin: 20px;
+  margin-top: 55px;
+  width: 160px;
+  height: 140px;
   border-radius: 5px;
 }
-
+#arn {
+float: right;
+  margin: 20px;
+  margin-top: 55px;
+  width: 160px;
+  height: 140px;
+  border-radius: 5px;
+  
+}
+#yold{
+  -webkit-box-shadow: 0px 5px 10px #96c0d0;
+    -moz-box-shadow: 0px 5px 10px #96c0d0;
+    box-shadow: 0px 5px 10px #96c0d0;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -khtml-border-radius: 8px;  
+    border-radius: 5px;
+    border:solid white 2px;
+} 
 
 /* forms */
 

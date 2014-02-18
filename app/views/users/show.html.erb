@@ -1,19 +1,34 @@
 <% provide(:title, @user.name) %>
-<div class="row">
-  <aside class="span4">
-    <section>
-      <h1>
+<div class="row-fluid">
+  <div class="span3">
+    
+      
         <%= gravatar_for @user %></br></br>
-        <%= @user.name %>
         
-      </h1>
-   </section>
-  </aside>
-  <div class="span8">
+     
+   </div>
+
+  <div class="span6">
+    <h1><%= @user.name %></h1><hr></br>
+        Location: <%= @user.location %></br> 
+        Poids: <%= @user.poid %>Kg</br>
+        Age: <%= @user.age %>ans</br>
+        Taille: <%= @user.taille %>cm</br>
+</div>
+<div class="span3">
+
+  <%= image_tag("arny.jpeg", alt: "Arny", id: "arn") %>
+
+
+  </div>
+</div>
+<div class="row">
+    <div class="center span12"><hr>
+
+
+  <%= image_tag("yold.jpg", alt: "old", id: "yold") %>
 
 
 
   </div>
 </div>
-    
-
