@@ -37,7 +37,6 @@ background-image:url('vertical_cloth.png');
 }
 
 .navbar-inner {
-//background-image:url('vertical_cloth.png');
   background: white;
 }
 
@@ -99,15 +98,16 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #848997;
+  color: #86dca6;
+  text-shadow: 0px 1px 1px gray;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
   line-height: 1;
   &:hover {
-    color: $grayMediumLight;
-    text-shadow: 0px 2px 3px #555;
+    color: white;
+    text-shadow: 0px 1px 2px #555;
     text-decoration: none;
   }
 }
@@ -118,9 +118,9 @@ footer {
   margin-top: 25px;
   padding-top: 5px;
   border-top: 1px solid $grayMediumLight;
-  color: #ffbf7a;
+  color: #1d783f;
   a {
-    color: #9dffc2;
+    color: #1d783f;
     &:hover {
       color: $grayDarker;
     }
@@ -146,9 +146,9 @@ footer {
   
   width: 580px;
   height: 310px;
-  -webkit-box-shadow: 0px 5px 10px #4d4d4d;
-    -moz-box-shadow: 0px 5px 10px #4d4d4d;
-    box-shadow: 0px 5px 10px #4d4d4d;
+  -webkit-box-shadow: 0px 5px 10px #96c0d0;
+    -moz-box-shadow: 0px 5px 10px #96c0d0;
+    box-shadow: 0px 5px 10px #96c0d0;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     -khtml-border-radius: 8px;  
@@ -163,7 +163,7 @@ footer {
 /* Hero unit*/
 .hero-unit {
   
-  background-color: #898c97;
+  background-color: #508aa0;
   padding-top:18px;
   padding-bottom: 18px;
   
@@ -171,12 +171,14 @@ footer {
   h1 {
 
   margin-top: 0px;
-  color:#1f2023;
+  color: white;
+  text-shadow: 0px 1px 2px black;
+
   
   }
   h2 {
   margin-bottom: 16px;
-  color: #2d2512;
+  color: #86dca6;
   
   }
   h3 {
@@ -190,10 +192,23 @@ footer {
 }
 
 .row-fluid {
-  color: #ffaa4e;
+  color: #1f2c71;
   text-align: center;
+  font:15px verdana;
   .span3 {
   margin-top: 5%;
+  }
+  .span4 {
+  color: #58b97c;
+  font:13px verdana;
+
+  h2 {
+  color: #1d783f;
+  font:bold 20px tahoma;
+  margin-top: 0px;  
+  margin-bottom: 10px;
+
+  }
   }
 
   }

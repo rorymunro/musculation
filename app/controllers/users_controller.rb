@@ -10,12 +10,7 @@ end
 
 def show
         @user = User.find(params[:id])
-        @backs = @user.backs.paginate(page: params[:page])
-    @poitrines = @user.poitrines.paginate(page: params[:page])
-    @shoulders = @user.shoulders.paginate(page: params[:page])
-    @day1s = @user.day1s.paginate(page: params[:page])
-    @day2s = @user.day2s.paginate(page: params[:page])
-    @day3s = @user.day3s.paginate(page: params[:page])
+        
 
   end
 
@@ -65,7 +60,7 @@ end
   private
 
     def user_params
-      params.require(:user).permit(:name, :email, :password, :bench,
+      params.require(:user).permit(:name, :email, :password, 
                                    :password_confirmation)
     end
 

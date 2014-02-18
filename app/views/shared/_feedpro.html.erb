@@ -1,0 +1,6 @@
+<% if @feedpro_items.any? %>
+  <ol class="profils">
+    <%= render partial: 'shared/feedpro_item', collection: @feedpro_items %>
+  </ol>
+  <%= will_paginate @feedpro_items %>
+<% end %>

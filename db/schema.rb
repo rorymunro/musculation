@@ -95,13 +95,4 @@ ActiveRecord::Schema.define(version: 20140204182857) do
     t.boolean  "admin",           default: false
   end
 
-  create_table "weights", primary_key: "user_id", force: true do |t|
-    t.integer  "bench"
-    t.integer  "incline_bench"
-    t.integer  "pec_flight"
-    t.integer  "incline_pec"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
 end
