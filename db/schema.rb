@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140218152734) do
+ActiveRecord::Schema.define(version: 20140218220761) do
 
   create_table "backs", force: true do |t|
     t.integer  "pull_up"
@@ -25,6 +25,14 @@ ActiveRecord::Schema.define(version: 20140218152734) do
   end
 
   add_index "backs", ["user_id", "created_at"], name: "index_backs_on_user_id_and_created_at"
+
+  create_table "categories", force: true do |t|
+    t.string   "title"
+    t.boolean  "state",      default: true
+    t.integer  "position",   default: 0
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "day1s", force: true do |t|
     t.integer  "squat"
@@ -59,6 +67,18 @@ ActiveRecord::Schema.define(version: 20140218152734) do
 
   add_index "day3s", ["user_id", "created_at"], name: "index_day3s_on_user_id_and_created_at"
 
+  create_table "forums", force: true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.boolean  "state",        default: true
+    t.integer  "topics_count", default: 0
+    t.integer  "posts_count",  default: 0
+    t.integer  "position",     default: 0
+    t.integer  "category_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "poitrines", force: true do |t|
     t.integer  "developpe_couche"
     t.integer  "developpe_incline"
@@ -72,6 +92,15 @@ ActiveRecord::Schema.define(version: 20140218152734) do
 
   add_index "poitrines", ["user_id", "created_at"], name: "index_poitrines_on_user_id_and_created_at"
 
+  create_table "posts", force: true do |t|
+    t.text     "body"
+    t.integer  "forum_id"
+    t.integer  "topic_id"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "shoulders", force: true do |t|
     t.integer  "squat"
     t.integer  "rowing_menton"
@@ -83,6 +112,18 @@ ActiveRecord::Schema.define(version: 20140218152734) do
   end
 
   add_index "shoulders", ["user_id", "created_at"], name: "index_shoulders_on_user_id_and_created_at"
+
+  create_table "topics", force: true do |t|
+    t.string   "title"
+    t.integer  "hits",        default: 0
+    t.boolean  "sticky",      default: false
+    t.boolean  "locked",      default: false
+    t.integer  "posts_count"
+    t.integer  "forum_id"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "name"
@@ -96,6 +137,9 @@ ActiveRecord::Schema.define(version: 20140218152734) do
     t.string   "location"
     t.integer  "age"
     t.integer  "taille"
+    t.integer  "poids"
+    t.integer  "topics_count",    default: 0
+    t.integer  "posts_count",     default: 0
   end
 
 end

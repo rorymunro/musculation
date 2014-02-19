@@ -38,6 +38,7 @@
 
          
           <li><%= link_to "Users", users_path %></li>
+           <li><%= link_to "Forum", forums_path %></li>
           
             
            
@@ -59,9 +60,10 @@
             </li>
           <% else %>
           <li><%= link_to "Home",    root_path, id: "navTop" %></li>
-          <li><%= link_to "Regime",    regime_path, id: "navTop" %></li>
-          <li><%= link_to "Forum", forum_path, id: "navTop" %></li>
-          <li><%= link_to "About", about_path, id: "navTop" %></li>
+          <li><%= link_to "standard",    standard_path, id: "navTop" %></li>
+          <li><%= link_to "5*5",    regime_path, id: "navTop" %></li>
+          
+          <li><%= link_to "Info", about_path, id: "navTop" %></li>
             <li><%= link_to "Sign in", signin_path %></li>
           <% end %>
         </ul>

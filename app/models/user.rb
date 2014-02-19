@@ -5,7 +5,8 @@ class User < ActiveRecord::Base
     has_many :day1s, dependent: :destroy
     has_many :day2s, dependent: :destroy
     has_many :day3s, dependent: :destroy
-
+    has_many :topics, :dependent => :destroy
+has_many :posts, :dependent => :destroy
 
 	before_save { self.email = email.downcase }
 	before_create :create_remember_token
@@ -15,6 +16,8 @@ validates :email, presence: true, format: { with: VALID_EMAIL_REGEX },
                     uniqueness: { case_sensitive: false }
 has_secure_password
 validates :password, length: { minimum: 6 }
+
+
 
 def feed
 	Back.where("user_id = ?", id)

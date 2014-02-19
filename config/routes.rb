@@ -1,6 +1,13 @@
 Musculation::Application.routes.draw do
   
   
+  resources :categories, :except => [:index, :show]
+  resources :forums, :except => :index do
+  resources :topics, :shallow => true, :except => :index do
+  resources :posts, :shallow => true, :except => [:index, :show]
+    end
+    root :to => 'categories#index', :via => :get
+  end
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
   resources :backs, only: [:create, :destroy]
