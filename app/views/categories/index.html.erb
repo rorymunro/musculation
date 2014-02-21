@@ -1,5 +1,5 @@
 <div class="right controls"><%= link_to "Nouvelle catégorie de forum", new_category_path %></div>
-Catégorie: <% @categories.each do |category| %>
+ <% @categories.each do |category| %>
   <div class="module">
     <div class="module_header">
       <%= category.title %>
@@ -20,7 +20,7 @@ Catégorie: <% @categories.each do |category| %>
         </tr>
         <% category.forums.each do |forum| %>
         <tr>
-          
+          <td class="icon"><%= gravatar_for forum.posts.first.user %></td>
           <td class="description">
             <%= link_to forum.title, forum_path(forum) %><br />
             <span class="smaller"><%= forum.description %></span><br />

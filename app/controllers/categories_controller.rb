@@ -1,6 +1,6 @@
 class CategoriesController < ApplicationController  
   before_action :signed_in_user, only: [:create, :destroy]
-  before_action :correct_user,   only: :destroy 
+  
 
   def index
     @categories = Category.all
@@ -47,10 +47,7 @@ private
   def category_params
     params.require(:category).permit(:title, :state, :position, :category_id)
   end
-  def correct_user
-      @category = current_user.categories.find_by(id: params[:id])
-      redirect_to categories_url if @category.nil?
-    end
+  
 
 
   
