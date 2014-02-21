@@ -1,6 +1,6 @@
 class ForumsController < ApplicationController   
 before_action :signed_in_user, only: [:create, :destroy]
-  before_action :correct_user,   only: :destroy 
+   
   def show
     @forum = Forum.find(params[:id])
   end
@@ -27,7 +27,7 @@ before_action :signed_in_user, only: [:create, :destroy]
   def update
     @forum = Forum.find(params[:id])
     
-    if @forum.update_attributes(params[:forum])
+    if @forum.update_attributes(forum_params)
       flash[:notice] = "Forum was updated successfully."
       redirect_to forum_url(@forum)
     end
@@ -46,10 +46,7 @@ private
   def forum_params
     params.require(:forum).permit(:title, :description, :state, :position, :category_id)
   end
-  def correct_user
-      @forum = current_user.forums.find_by(id: params[:id])
-      redirect_to forums_url if @forum.nil?
-    end
+  
 
 
   

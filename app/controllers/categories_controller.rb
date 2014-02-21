@@ -1,5 +1,6 @@
 class CategoriesController < ApplicationController  
   before_action :signed_in_user, only: [:create, :destroy]
+ 
   
 
   def index
@@ -28,7 +29,7 @@ class CategoriesController < ApplicationController
   def update
     @category = Category.find(params[:id])
     
-    if @category.update_attributes(params[:category])
+    if @category.update_attributes(category_params)
       flash[:notice] = "Category was updated successfully."
       redirect_to forums_url
     end
@@ -47,8 +48,7 @@ private
   def category_params
     params.require(:category).permit(:title, :state, :position, :category_id)
   end
-  
-
+   
 
   
 end

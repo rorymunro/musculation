@@ -1,6 +1,6 @@
 class TopicsController < ApplicationController  
   before_action :signed_in_user, only: [:create, :destroy]
-  before_action :correct_user,   only: :destroy 
+  before_action :correct_user,   only: [:edit, :destroy] 
   def show
     @topic = Topic.find(params[:id])
     @topic.hit! if @topic
@@ -31,7 +31,7 @@ class TopicsController < ApplicationController
   def update
     @topic = Topic.find(params[:id])
     
-    if @topic.update_attributes(params[:topic])
+    if @topic.update_attributes(topic_params)
       flash[:notice] = "Topic was updated successfully."
       redirect_to topic_url(@topic)
     end
@@ -53,7 +53,7 @@ private
   end
   def correct_user
       @topic = current_user.topics.find_by(id: params[:id])
-      redirect_to topics_url if @topic.nil?
+      redirect_to topic_url if @topic.nil?
     end
 
 

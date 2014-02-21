@@ -1,6 +1,6 @@
 class PostsController < ApplicationController  
 before_action :signed_in_user, only: [:create, :destroy]
-  before_action :correct_user,   only: :destroy  
+  before_action :correct_user,   only: [:edit, :destroy]  
   def new
     @topic = Topic.find(params[:topic_id])
     @post = Post.new
@@ -34,7 +34,7 @@ before_action :signed_in_user, only: [:create, :destroy]
   def update
     @post = Post.find(params[:id])
 
-    if @post.update_attributes(params[:post])
+    if @post.update_attributes(post_params)
       flash[:notice] = "Post was successfully updated."
       redirect_to topic_path(@post.topic)
     end
