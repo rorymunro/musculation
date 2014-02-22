@@ -13,7 +13,7 @@ before_action :signed_in_user, only: [:create, :destroy]
     @forum = Forum.new(forum_params)
     
     if @forum.save
-      flash[:notice] = "Forum was successfully created."
+      flash[:notice] = "Forum a été créé avec succès."
       redirect_to forums_url
     else
       render :action => 'new'
@@ -28,7 +28,7 @@ before_action :signed_in_user, only: [:create, :destroy]
     @forum = Forum.find(params[:id])
     
     if @forum.update_attributes(forum_params)
-      flash[:notice] = "Forum was updated successfully."
+      flash[:notice] = "Ce forum a été mis à jour."
       redirect_to forum_url(@forum)
     end
   end

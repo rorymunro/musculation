@@ -9,7 +9,7 @@
       <div class="fieldset">
         <span class="label indent smaller">
           <%= f.label :title %><br />
-          <small>(Required)</small>
+          <small>(Requis)</small>
         </span>
         <span class="input indent smaller"><%= f.text_field :title, :size => 75 %></span>
         <div class="clear"></div>
@@ -19,7 +19,7 @@
     </div>
     <div class="module_footer">
       <div class="fieldset">
-        <span class="input"><%= f.submit "submit" %> or <%= link_to "cancel", forums_path %></span>
+        <span class="input"><%= f.submit "submit", class: "btn btn-large btn-success" %> or <%= link_to "annuler", forums_path %></span>
         <div class="clear"></div>
       </div>
     </div>

@@ -20,7 +20,7 @@ before_action :signed_in_user, only: [:create, :destroy]
     @post.user = current_user
     
     if @post.save
-      flash[:notice] = "Post was successfully created."
+      flash[:notice] = "Post a été créé avec succès."
       redirect_to topic_path(@post.topic)
     else
       render :action => 'new'
@@ -35,7 +35,7 @@ before_action :signed_in_user, only: [:create, :destroy]
     @post = Post.find(params[:id])
 
     if @post.update_attributes(post_params)
-      flash[:notice] = "Post was successfully updated."
+      flash[:notice] = "Ce post a été mis à jour."
       redirect_to topic_path(@post.topic)
     end
   end

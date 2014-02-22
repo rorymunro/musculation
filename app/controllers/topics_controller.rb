@@ -17,7 +17,7 @@ class TopicsController < ApplicationController
     @topic.user = current_user
     
     if @topic.save
-      flash[:notice] = "Topic was successfully created."
+      flash[:notice] = "Sujet a été créé avec succès."
       redirect_to topic_url(@topic)
     else
       render :action => 'new'
@@ -32,7 +32,7 @@ class TopicsController < ApplicationController
     @topic = Topic.find(params[:id])
     
     if @topic.update_attributes(topic_params)
-      flash[:notice] = "Topic was updated successfully."
+      flash[:notice] = "Ce sujet a été mis à jour."
       redirect_to topic_url(@topic)
     end
   end

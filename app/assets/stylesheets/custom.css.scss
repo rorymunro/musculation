@@ -386,6 +386,30 @@ color: white;
 
   }
 }
+.noma {
+
+  .gravatar{
+  width: 90px;
+  margin: 0px;
+  padding:0px;
+  }
+   h4{
+  padding-top: 30px;
+  padding-left: 115px;
+  }
+}
+.useredit{
+.gravatar{
+  width: 90px;
+  margin: 0px;
+  padding:0px;
+  }
+   h4{
+  padding-top: 30px;
+  padding-left: 115px;
+  }
+  
+}
 
 /*   forum index   */
 .right-controls {
@@ -410,7 +434,7 @@ color: white;
 
 .module .fieldset { width:100%; }
 .module .fieldset .indent { width:16em; }
-.module .fieldset .label { font-weight:bold; text-align:center; display:block; float:left; padding:6px 0px 2px 1em; background: #508aa0; }
+.module .fieldset .label { font-weight:bold; text-align:center; display:block; float:left; padding:6px 0px 2px 1em; background: #508aa0; border:1px solid #e2e2e2; border-radius: 3px; }
 .module .fieldset .label small { font-weight:normal; }
 .module .fieldset .input { padding:.2em 1em; display:block; float:left; }
 

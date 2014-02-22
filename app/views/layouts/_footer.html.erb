@@ -5,7 +5,9 @@
   <nav>
     <ul>
       <li><%= link_to "Info",   about_path %></li>
-      
+      <% if !signed_in? %>
+       <li> <%= link_to "Registre", signup_path %></li>
+      <% end %>
     </ul>
   </nav>
 </footer>

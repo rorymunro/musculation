@@ -1,10 +1,10 @@
-<div class="right controls"><%= link_to "Back to Forum", forum_path(@topic.forum) %></div>
+<div class="right controls"><h3><%= link_to "Retour à la forum", forum_path(@topic.forum) %></h3></div>
 <div class="module">
   <div class="module_header">
     <%= @topic.title %>
     <span class="right controls">
-      <%= link_to "Edit", edit_topic_path(@topic) %>
-      <%= link_to "Delete", @topic, :confirm => "Are you sure?", :method => :delete %>
+      <%= link_to "Modifier", edit_topic_path(@topic) %>
+      <%= link_to "Annuler", @topic, :confirm => "Are you sure?", :method => :delete %>
       <%= link_to @topic.sticky ? "Unstick" : "Sticky", {:controller => 'topics', :action => 'update', :topic => {:sticky => @topic.sticky ? "false" : "true" }}, :method => :put %>
       <%= link_to @topic.locked ? "Unlock" : "Lock", {:controller => 'topics', :action => 'update', :topic => {:locked => @topic.locked ? "false" : "true" }}, :method => :put %>
     </span>
@@ -18,16 +18,16 @@
           <span class="avatar"><%= gravatar_for post.user%></span>
           <span class="info smaller">
             Posts <%= post.user.posts.size %><br />
-            Registered <%= post.user.created_at.to_s(:joined) %><br />
+            Inscrit <%= post.user.created_at.to_s(:joined) %><br />
           </span>
         </td>
         <td class="post_header">
           <span class="left post_date smaller">Posted <%= post.created_at %></span>
           <span class="right controls">
-            <%= link_to "Reply", new_topic_post_path(@topic) %>
-            <%= link_to "Quote", new_topic_post_path(@topic, :quote => post) %>
-            <%= link_to "Edit", edit_post_path(post) %>
-            <%= link_to "Delete", post, :confirm => "Are you sure?", :method => :delete %>
+            <%= link_to "Répondre", new_topic_post_path(@topic) %>
+            <%= link_to "Citer", new_topic_post_path(@topic, :quote => post) %>
+            <%= link_to "Modifier", edit_post_path(post) %>
+            <%= link_to "Suprimer", post, :confirm => "êtes-vous sûr?", :method => :delete %>
           </span>
         </td>
       </tr>
