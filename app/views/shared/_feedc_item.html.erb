@@ -1,0 +1,120 @@
+<li id="<%= feedc_item.id %>">
+  
+  <span class="timestamp">
+    Posté le <%= feedc_item.created_at.strftime("%d, %b, %Y") %>.
+  </span></br>
+  <div class= "tings">
+
+  <% unless feedc_item.pull_up1.blank? %>
+  <span class="pull_up1">Pull up:   <%= feedc_item.pull_up1 %>kg</span> |  
+  <% end %>
+  <% unless feedc_item.pull_upre.blank? %>
+  <span class="pull_upre">Sets et Reps:   <%= feedc_item.pull_upre %></span></br>
+  <% end %>
+  
+  <% unless feedc_item.deadlift1.blank? %>
+  <span class="deadlift1">Deadlift:   <%= feedc_item.deadlift1 %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.deadliftre.blank? %>
+  <span class="deadliftre">Sets/reps:   <%= feedc_item.deadliftre %></span></br>
+  <% end %>
+  
+  <% unless feedc_item.row1.blank? %>
+  <span class="row1">Row:   <%= feedc_item.row1 %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.rowre.blank? %>
+  <span class="rowre">Sets/reps:   <%= feedc_item.rowre %></span></br>
+  <% end %>
+  
+  <% unless feedc_item.bicep_curl1.blank? %>
+  <span class="bicep_curl1">Bicep curl:   <%= feedc_item.bicep_curl1 %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.bicep_curlre.blank? %>
+  <span class="bicep_curlre">Sets/reps:   <%= feedc_item.bicep_curlre %></span></br>
+  <% end %>
+  
+  <% unless feedc_item.hammer1.blank? %>
+  <span class="hammer1">Hammer:   <%= feedc_item.hammer1 %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.hammerre.blank? %>
+  <span class="hammerre">Sets/reps:   <%= feedc_item.hammerre %></span></br>
+  <% end %>
+  
+  <% unless feedc_item.developpe_couche1.blank? %>
+  <span class="developpe_couche1">Developpe couche:   <%= feedc_item.developpe_couche1 %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.developpe_couchere.blank? %>
+  <span class="developpe_couchere">Sets/reps:   <%= feedc_item.developpe_couchere %></span></br>
+  <% end %>
+  
+  <% unless feedc_item.developpe_incline1.blank? %>
+  <span class="developpe_incline1">Developpe incline:   <%= feedc_item.developpe_incline1 %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.developpe_inclinere.blank? %>
+  <span class="developpe_inclinere">Sets/reps:   <%= feedc_item.developpe_inclinere %></span></br>
+  <% end %>
+  
+  <% unless feedc_item.ecarte_couche.blank? %>
+  <span class="ecarte_couche">Ecarte couche:   <%= feedc_item.ecarte_couche %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.ecarte_couchere.blank? %>
+  <span class="ecarte_couchere">Sets/reps:   <%= feedc_item.ecarte_couchere %></span></br>
+  <% end %>
+  
+  <% unless feedc_item.ecarte_incline1.blank? %>
+  <span class="ecarte_incline1">Ecarte_incline:   <%= feedc_item.ecarte_incline1 %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.ecarte_inclinere.blank? %>
+  <span class="ecarte_inclinere">Sets/reps:   <%= feedc_item.ecarte_inclinere %></span></br>
+  <% end %>
+
+<% unless feedc_item.haltere_au_font1.blank? %>
+  <span class="haltere_au_font1">Haltere au font:   <%= feedc_item.haltere_au_font1 %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.haltere_au_fontre.blank? %>
+  <span class="haltere_au_fontre">Sets/reps:   <%= feedc_item.haltere_au_fontre %></span></br>
+  <% end %>
+
+  <% unless feedc_item.squat1.blank? %>
+  <span class="squat1">Squat:   <%= feedc_item.squat1 %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.squatre.blank? %>
+  <span class="squatre">Sets/reps:   <%= feedc_item.squatre %></span></br>
+  <% end %>
+
+  <% unless feedc_item.rowing_menton1.blank? %>
+  <span class="rowing_menton1">Rowing menton:   <%= feedc_item.rowing_menton1 %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.rowing_mentonre.blank? %>
+  <span class="rowing_mentonre">Sets/reps:   <%= feedc_item.rowing_mentonre %></span></br>
+  <% end %>
+
+  <% unless feedc_item.ecarte_incline1.blank? %>
+  <span class="ecarte_incline1">Ecarte incline:   <%= feedc_item.ecarte_incline1 %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.ecarte_inclinere.blank? %>
+  <span class="ecarte_inclinere">Sets/reps:   <%= feedc_item.ecarte_inclinere %></span></br>
+  <% end %>
+
+  <% unless feedc_item.elevations_devant1.blank? %>
+  <span class="elevations_devant1">Elevations devant:   <%= feedc_item.elevations_devant1 %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.elevations_devantre.blank? %>
+  <span class="elevations_devantre">Sets/reps:   <%= feedc_item.elevations_devantre %></span></br>
+  <% end %>
+
+  <% unless feedc_item.rowing_courbe1.blank? %>
+  <span class="rowing_courbe1">Rowing courbe:   <%= feedc_item.rowing_courbe1 %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.rowing_courbere.blank? %>
+  <span class="rowing_courbere">Sets/reps:   <%= feedc_item.rowing_courbere %></span></br>
+  <% end %>
+
+ 
+ </div>
+ <% if current_user?(feedc_item.user) %>
+    <%= link_to "annuler", feedc_item, method: :delete,
+                                     data: { confirm: "êtes-vous sûr?" },
+                                     title: feedc_item %>
+  <% end %>
+</li>

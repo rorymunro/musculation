@@ -1,0 +1,12 @@
+<li>
+  <span class="content"><%= custom.content %></span>
+  <span class="timestamp">
+    Posté le <%= feed_item.created_at.strftime("%d, %b, %Y") %>.
+  </span>
+</li>
+<% if current_user?(custom.user) %>
+    <%= link_to "annuler", custom, method: :delete,
+                                     data: { confirm: "Vous etes sur?" },
+                                     title: custom %>
+  <% end %>
+</li>

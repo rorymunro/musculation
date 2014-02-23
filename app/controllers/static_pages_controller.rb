@@ -11,6 +11,8 @@ class StaticPagesController < ApplicationController
   def about
 
   end
+  def custom_regime
+  end
 
   def standard
   end
@@ -18,6 +20,13 @@ class StaticPagesController < ApplicationController
     if signed_in?
     @back = current_user.backs.build
     @feed_items = current_user.feed.paginate(page: params[:page])
+  end
+end
+def custom_journal
+    if signed_in?
+    @custom = current_user.customs.build 
+    @feedc_items = current_user.feedc.paginate(page: params[:page])
+
   end
 end
 

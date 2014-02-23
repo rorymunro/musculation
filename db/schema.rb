@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140218220761) do
+ActiveRecord::Schema.define(version: 20140222115754) do
 
   create_table "backs", force: true do |t|
     t.integer  "pull_up"
@@ -33,6 +33,42 @@ ActiveRecord::Schema.define(version: 20140218220761) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "customs", force: true do |t|
+    t.integer  "developpe_couche1"
+    t.string   "developpe_couchere"
+    t.integer  "developpe_incline1"
+    t.string   "developpe_inclinere"
+    t.integer  "ecarte_couche"
+    t.string   "ecarte_couchere"
+    t.integer  "ecarte_incline1"
+    t.string   "ecarte_inclinere"
+    t.integer  "haltere_au_font1"
+    t.string   "haltere_au_fontre"
+    t.integer  "squat1"
+    t.string   "squatre"
+    t.integer  "rowing_menton1"
+    t.string   "rowing_mentonre"
+    t.integer  "elevations_devant1"
+    t.string   "elevations_devantre"
+    t.integer  "rowing_courbe1"
+    t.string   "rowing_courbere"
+    t.integer  "pull_up1"
+    t.string   "pull_upre"
+    t.integer  "deadlift1"
+    t.string   "deadliftre"
+    t.integer  "row1"
+    t.integer  "rowre"
+    t.integer  "bicep_curl1"
+    t.string   "bicep_curlre"
+    t.integer  "hammer1"
+    t.string   "hammerre"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "customs", ["user_id", "created_at"], name: "index_Customs_on_user_id_and_created_at"
 
   create_table "day1s", force: true do |t|
     t.integer  "squat"

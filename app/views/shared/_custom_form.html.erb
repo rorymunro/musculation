@@ -1,0 +1,88 @@
+<%= form_for(@custom) do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+  <div class="field">
+    <div><h2>Dos et biceps</h2></div>
+    <div class= "lef"><%= f.label :pull_up %>
+    <%= f.number_field :pull_up1 %></div>
+      
+      <div class= "rig"><%= f.label :Reps_et_sets %>
+      <%= f.text_field :pull_upre %></div>
+
+      <div class= "lef"><%= f.label :deadlift %>
+      <%= f.number_field :deadlift1 %></div>
+
+      <div class= "rig"><%= f.label :Reps_et_sets %>
+      <%= f.text_field :deadliftre %></div>
+
+      <div class= "lef"><%= f.label :row %>
+      <%= f.number_field :row1 %></div>
+
+      <div class= "rig"><%= f.label :Reps_et_sets %>
+      <%= f.text_field :rowre %></div>
+  
+      <div class= "lef"><%= f.label :bicep_curl %>
+      <%= f.number_field :bicep_curl1 %></div>
+      <div class= "rig"><%= f.label :Reps_et_sets %>
+      <%= f.text_field :bicep_curlre %>
+  </div>
+      <div class= "lef"><%= f.label :hammer %>
+      <%= f.number_field :hammer1 %></div>
+      <div class= "rig"><%= f.label :Reps_et_sets %>
+      <%= f.text_field :hammerre %></div>
+
+
+<div><h2>Poitrine et triceps</h2></div>
+     
+      <div class= "lef"><%= f.label :developpe_couche %>
+      <%= f.number_field :developpe_couche1 %></div>
+      <div class= "rig"><%= f.label :Reps_et_sets %>
+      <%= f.text_field :developpe_couchere %></div>
+
+      <div class= "lef"><%= f.label :developpe_incline %>
+      <%= f.number_field :developpe_incline1 %></div>
+      <div class= "rig"><%= f.label :Reps_et_sets %>
+      <%= f.text_field :developpe_inclinere %></div>
+
+      <div class= "lef"><%= f.label :ecarte_couche %>
+      <%= f.number_field :ecarte_couche %></div>
+      <div class= "rig"><%= f.label :Reps_et_sets %>
+      <%= f.text_field :ecarte_couchere %></div>
+  
+      <div class= "lef"><%= f.label :ecarte_incline %>
+      <%= f.number_field :ecarte_incline1 %></div>
+      <div class= "rig"><%= f.label :Reps_et_sets %>
+      <%= f.text_field :ecarte_inclinere %></div>
+      
+  
+      <div class= "lef"><%= f.label :haltere_au_front %>
+      <%= f.number_field :haltere_au_font1 %></div>
+      <div class= "rig"><%= f.label :Reps_et_sets %>
+      <%= f.text_field :haltere_au_fontre %></div>
+
+     <div><h2>Cuisses et Epaules</h2></div>
+      <div class= "lef"><%= f.label :squat %>
+      <%= f.number_field :squat1 %></div>
+      <div class= "rig"><%= f.label :Reps_et_sets %>
+      <%= f.text_field :squatre %></div>
+
+      <div class= "lef"><%= f.label :rowing_menton %>
+      <%= f.number_field :rowing_menton1 %></div>
+      <div class= "rig"><%= f.label :Reps_et_sets %>
+      <%= f.text_field :rowing_mentonre %></div>
+
+      
+
+      <div class= "lef"><%= f.label :elevations_devant %>
+      <%= f.number_field :elevations_devant1 %></div>
+      <div class= "rig"><%= f.label :Reps_et_sets %>
+      <%= f.text_field :elevations_devantre %></div>
+  
+      <div class= "lef"><%= f.label :rowing_courbe %>
+      <%= f.number_field :rowing_courbe1 %></div>
+      <div class= "rig"><%= f.label :Reps_et_sets %>
+      <%= f.text_field :rowing_courbere %></div>
+  
+  
+  </div>
+  <%= f.submit "Post", class: "btn btn-large btn-primary" %>
+<% end %>

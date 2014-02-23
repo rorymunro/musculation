@@ -5,6 +5,7 @@ class User < ActiveRecord::Base
     has_many :day1s, dependent: :destroy
     has_many :day2s, dependent: :destroy
     has_many :day3s, dependent: :destroy
+    has_many :customs, dependent: :destroy
     has_many :topics, :dependent => :destroy
 has_many :posts, :dependent => :destroy
 
@@ -36,6 +37,9 @@ def feed2
 end
 def feed3
 	Day3.where("user_id = ?", id)
+end
+def feedc
+	Custom.where("user_id = ?", id)
 end
 
 

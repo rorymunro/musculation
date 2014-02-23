@@ -361,12 +361,17 @@ color: white;
   border: 1px solid #bbb;
   background: #2b2c34;
   border-radius: 6px;
-    margin-left:230px;
-    margin-right: 230px;
+    margin-left:100px;
+    margin-right: 100px;
     margin-top: 5px;
 }
 .span8 {
   text-align: center;
+  h1 {color: #508aa0;
+  font:bold 50px tahoma;
+  text-shadow: 0px 1px 2px gray;
+  
+}
 
 }
 
@@ -474,4 +479,29 @@ blockquote {
   font-style: italic;
   margin: 10px 0px 0px 25px;
   padding: 10px;
+ }
+
+ .lef{
+float: left;
+width: 45%;
+
+ }
+ .rig{
+float: right;
+width: 50%;
+
+ }
+ 
+
+ .field {
+ h2{
+ font:bold 20px tahoma;
+ color: #1d783f;
+ margin-top: 20px;font:bold 20px tahoma;
+ margin-bottom: 4px;
+ }
+ }
+
+ .timestamp {
+ color: #1d783f;
  }
