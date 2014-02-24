@@ -24,9 +24,9 @@
         <tr>
           <td class="icon">
            <% if forum.posts.size < 1 %>
-          <%= gravatar_for current_user %>
+          <%= image_tag current_user.avatar.url  %>
           <% else %>
-          <%= gravatar_for forum.posts.first.user %>
+          <%= image_tag forum.posts.first.user.avatar.url %>
 <% end %>
 </td>
           <td class="description">

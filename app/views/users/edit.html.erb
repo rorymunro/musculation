@@ -3,7 +3,10 @@
 
 <div class="row">
   <div class="span6 offset3">
-    <%= form_for(@user) do |f| %>
+    
+  
+
+    <%= form_for(@user, :html => { :multipart => true }) do |f| %>
       <%= render 'shared/error_messages', object: f.object %>
 
       <%= f.label :nom %>
@@ -30,10 +33,15 @@
       <%= f.label :confirmation_de_mot_de_passe %>
       <%= f.password_field :password_confirmation %>
 
+      <%= image_tag @user.avatar.url %>
+        
+      <%= f.label :avatar!%>
+      <%= f.file_field :avatar %>
+
+
       <%= f.submit "Enregistrer les modifications", class: "btn btn-large btn-primary" %>
     <% end %>
 
-    <div class= "useredit"><%= gravatar_for @user %>
-    <a href="http://gravatar.com/emails">changer</a></div>
+    
   </div>
 </div>

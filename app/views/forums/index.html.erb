@@ -22,7 +22,7 @@
         </tr>
         <% category.forums.each do |forum| %>
         <tr>
-          <td class="icon"><%= gravatar_for forum.user%></td>
+          <td class="icon"><%= image_tag forum.user.avatar.url%></td>
           <td class="description">
             <%= link_to forum.title, forum_path(forum) %><br />
             <span class="smaller"><%= forum.description %></span><br />

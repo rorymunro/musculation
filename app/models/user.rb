@@ -17,7 +17,8 @@ validates :email, presence: true, format: { with: VALID_EMAIL_REGEX },
                     uniqueness: { case_sensitive: false }
 has_secure_password
 validates :password, length: { minimum: 6 }
-
+has_attached_file :avatar, :default_url => "/images/:style/missing.png"
+  validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
 
 
 def feed

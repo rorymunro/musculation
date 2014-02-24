@@ -20,7 +20,7 @@
       </tr>
       <% @forum.topics.each do |topic| %>
       <tr>
-        <td class="icon"><%= gravatar_for topic.user%></td>
+        <td class="icon"><%= image_tag topic.user.avatar.url %></td>
         <td class="description">
           <%= link_to topic.title, topic_path(topic) %><br />
           <span class="smaller">by <%= topic.user.name %></span>

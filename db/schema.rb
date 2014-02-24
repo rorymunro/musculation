@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140222115754) do
+ActiveRecord::Schema.define(version: 20140224092324) do
 
   create_table "backs", force: true do |t|
     t.integer  "pull_up"
@@ -58,7 +58,7 @@ ActiveRecord::Schema.define(version: 20140222115754) do
     t.integer  "deadlift1"
     t.string   "deadliftre"
     t.integer  "row1"
-    t.integer  "rowre"
+    t.text     "rowre"
     t.integer  "bicep_curl1"
     t.string   "bicep_curlre"
     t.integer  "hammer1"
@@ -67,8 +67,6 @@ ActiveRecord::Schema.define(version: 20140222115754) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  add_index "customs", ["user_id", "created_at"], name: "index_Customs_on_user_id_and_created_at"
 
   create_table "day1s", force: true do |t|
     t.integer  "squat"
@@ -174,8 +172,12 @@ ActiveRecord::Schema.define(version: 20140222115754) do
     t.integer  "age"
     t.integer  "taille"
     t.integer  "poids"
-    t.integer  "topics_count",    default: 0
-    t.integer  "posts_count",     default: 0
+    t.integer  "topics_count",        default: 0
+    t.integer  "posts_count",         default: 0
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
   end
 
 end

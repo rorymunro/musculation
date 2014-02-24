@@ -15,7 +15,7 @@
       <tr>
         <td class="post_author" rowspan="2">
           <span class="name"><%= post.user.name %></span>
-          <span class="avatar"><%= gravatar_for post.user%></span>
+          <span class="avatar"><%= image_tag post.user.avatar.url %></span>
           <span class="info smaller">
             Posts <%= post.user.posts.size %><br />
             Inscrit <%= post.user.created_at.to_s(:joined) %><br />

@@ -262,20 +262,13 @@ h3{
 /* sidebar */
 
 
-.gravatar {
-  float: left;
-  margin: 20px;
-  margin-top: 55px;
-  width: 120px;
-  
-  border-radius: 5px;
-}
+
 #arn {
 float: right;
   margin: 20px;
   margin-top: 55px;
-  width: 160px;
-  height: 140px;
+  width: 260px;
+  
   border-radius: 5px;
   
 }
@@ -375,6 +368,9 @@ color: white;
 
 }
 
+
+
+
 /* poitrine */
 
 .poitrines {
@@ -391,9 +387,19 @@ color: white;
 
   }
 }
+.all{
+  color: #508aa0;
+  font:bold 20px tahoma;
+  text-shadow: 0px 1px 2px gray;
+}
+.avatar img{
+  width: 100px;
+  border-radius: 2px;
+}
 .noma {
 
-  .gravatar{
+  img{
+  float:left;
   width: 90px;
   margin: 0px;
   padding:0px;
@@ -404,7 +410,7 @@ color: white;
   }
 }
 .useredit{
-.gravatar{
+ img{
   width: 90px;
   margin: 0px;
   padding:0px;
@@ -420,8 +426,8 @@ color: white;
 .right-controls {
   color: pink;
 }
-.icon {
-  width: 30px;
+.icon img{
+  width: 100px;
 }
 
 /* Modules */
@@ -505,3 +511,23 @@ width: 50%;
  .timestamp {
  color: #1d783f;
  }
+
+
+ .ava img{
+  float: left;
+  margin: 20px;
+  margin-top: 55px;
+  width: 200px;
+  max-height: 160px;
+  border-radius: 5px;
+  
+}
+ .av img{
+  float: left;
+  margin: 10px;
+  margin-top: 35px;
+  width: 200px;
+  max-height: 160px;
+  border-radius: 5px;
+  
+}
