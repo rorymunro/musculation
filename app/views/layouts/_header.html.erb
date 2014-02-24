@@ -7,8 +7,24 @@
         <ul class="nav pull-right">
           
           <% if signed_in? %>
-          
+          <li id="fat-menu" class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Exercices<b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><%= link_to "Exercices", exercices_path, id: "navTop" %></li>
+                <li><%= link_to "Pectoraux", pectoraux_path %></li>
+                <li><%= link_to "Jambes", jambes_path %></li>
+                <li><%= link_to "Dos", dos1_path %></li>
+                <li><%= link_to "Epaules", epaules_path %></li>
+                <li><%= link_to "Biceps", biceps_path %></li>
+                <li><%= link_to "Triceps", triceps_path %></li>
+                <li><%= link_to "Trapezes/Cou", trapezes_path %></li>
 
+
+                  </ul>
+                </li>
+            
           <li id="fat-menu" class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 Custom<b class="caret"></b>

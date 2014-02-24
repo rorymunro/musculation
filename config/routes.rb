@@ -1,6 +1,7 @@
 Musculation::Application.routes.draw do
   
   
+
   resources :categories, :except => [:index, :show]
   resources :forums, :except => :index do
   resources :topics, :shallow => true, :except => :index do
@@ -17,6 +18,7 @@ Musculation::Application.routes.draw do
   resources :day2s, only: [:create, :destroy]
   resources :day3s, only: [:create, :destroy]
   resources :customs, only: [:create, :destroy]
+  
 
   root  'static_pages#home'
   match '/signup', to: 'users#new', via: 'get'
@@ -34,6 +36,32 @@ Musculation::Application.routes.draw do
   match '/jour3',   to: 'static_pages#jour3',   via: 'get'
   match '/custom_regime',   to: 'static_pages#custom_regime',   via: 'get'
   match '/custom_journal',   to: 'static_pages#custom_journal',   via: 'get'
+
+  match '/exercices', to: 'exercices#index', via: 'get'
+ 
+  match '/pectoraux', to: 'exercices#pectoraux', via: 'get'
+  match '/pectoraux1', to: 'exercices#pectoraux1', via: 'get'
+  match '/pectoraux2', to: 'exercices#pectoraux2', via: 'get'
+  match '/pectoraux3', to: 'exercices#pectoraux3', via: 'get'
+  match '/pectoraux4', to: 'exercices#pectoraux4', via: 'get'
+  match '/pectoraux5', to: 'exercices#pectoraux5', via: 'get'
+  match '/pectoraux6', to: 'exercices#pectoraux6', via: 'get'
+  match '/pectoraux7', to: 'exercices#pectoraux7', via: 'get'
+  match '/pectoraux8', to: 'exercices#pectoraux8', via: 'get'
+  
+  match '/biceps', to: 'exercices#biceps', via: 'get'
+  match '/triceps', to: 'exercices#triceps', via: 'get'
+  match '/epaules', to: 'exercices#epaules', via: 'get'
+  match '/dos1', to: 'exercices#dos', via: 'get'
+ 
+  match '/jambes', to: 'exercices#jambes', via: 'get'
+  match '/jambes1', to: 'exercices#jambes1', via: 'get'#
+  match '/jambes2', to: 'exercices#jambes2', via: 'get'
+  match '/jambes3', to: 'exercices#jambes3', via: 'get'
+  match '/jambes4', to: 'exercices#jambes4', via: 'get'
+ 
+  match '/trapezes', to: 'exercices#trapezes', via: 'get'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
