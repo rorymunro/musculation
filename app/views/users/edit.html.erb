@@ -33,10 +33,11 @@
       <%= f.label :confirmation_de_mot_de_passe %>
       <%= f.password_field :password_confirmation %>
 
-      <%= image_tag @user.avatar.url %>
-        
-      <%= f.label :avatar!%>
-      <%= f.file_field :avatar %>
+
+      <%= image_tag @user.avatar.url%>
+  
+      <div class= "chanle">Changer image:  </div>
+      <div class="chanr"><%= f.file_field :avatar %></div>
 
 
       <%= f.submit "Enregistrer les modifications", class: "btn btn-large btn-primary" %>
