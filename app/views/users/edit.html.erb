@@ -35,6 +35,10 @@
 
 
       <%= image_tag @user.avatar.url%>
+      <div class="field">
+  <%= f.label :avatar %><br />
+  <%= f.file_field :avatar %>
+</div>
   
       <div class= "chanle">Changer image:  </div>
       <div class="chanr"><%= f.file_field :avatar %></div>
