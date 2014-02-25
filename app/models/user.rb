@@ -18,7 +18,13 @@ validates :email, presence: true, format: { with: VALID_EMAIL_REGEX },
 has_secure_password
 validates :password, length: { minimum: 6 }
   
- has_attached_file :avatar, :styles => { :medium => "300x300>", :thumb => "100x100>" },
+ has_attached_file :avatar, styles: {
+    thumb: '100x100>',
+    square: '200x200#',
+    medium: '300x300>'
+  }
+
+  # Validate the attached image is image/jpg, image/png, etc
   validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
 
 def feed
