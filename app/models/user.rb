@@ -18,15 +18,8 @@ validates :email, presence: true, format: { with: VALID_EMAIL_REGEX },
 has_secure_password
 validates :password, length: { minimum: 6 }
   
- 
-  has_attached_file :avatar, :default_url => "yold.jpg",
-    :storage => :s3,
-    :bucket => 'S3_BUCKET_NAME',
-    :s3_credentials => {
-      :access_key_id => 'AWS_ACCESS_KEY_ID',
-      :secret_access_key => 'AWS_SECRET_ACCESS_KEY'
-    }
- validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
+ has_attached_file :avatar, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "/images/:style/missing.png"
+  validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
 
 def feed
 	Back.where("user_id = ?", id)

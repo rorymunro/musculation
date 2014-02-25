@@ -9,8 +9,7 @@ gem 'faker', '1.1.2'
 gem 'nivo-rails'
 gem 'will_paginate', '3.0.4'
 gem 'bootstrap-will_paginate', '0.0.9'
-gem "paperclip", "~> 4.1"
-gem 'aws-sdk'
+gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git" 
 gem 'forum_monster'
 gem 'rinku', :require => 'rails_rinku'
 group :development, :test do
