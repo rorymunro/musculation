@@ -80,9 +80,9 @@ config.force_ssl = true
   config.paperclip_defaults = {
   :storage => :s3,
   :s3_credentials => {
-    :bucket => ENV['S3_BUCKET_NAME'],
-    :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
-    :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
+    :bucket => ENV['musculation1'],
+    :access_key_id => ENV['AKIAJHBNKZR7JMLMF5MQ'],
+    :secret_access_key => ENV['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']
   }
 }
 
