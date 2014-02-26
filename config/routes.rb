@@ -49,16 +49,33 @@ Musculation::Application.routes.draw do
   match '/pectoraux7', to: 'exercices#pectoraux7', via: 'get'
   match '/pectoraux8', to: 'exercices#pectoraux8', via: 'get'
   
-  match '/biceps', to: 'exercices#biceps', via: 'get'
-  match '/triceps', to: 'exercices#triceps', via: 'get'
+  match '/bras', to: 'exercices#bras', via: 'get'
+  match '/bras1', to: 'exercices#bras1', via: 'get'
+  match '/bras2', to: 'exercices#bras2', via: 'get'
+  match '/bras3', to: 'exercices#bras3', via: 'get'
+  match '/bras4', to: 'exercices#bras4', via: 'get'
+  match '/bras5', to: 'exercices#bras5', via: 'get'
+  match '/bras6', to: 'exercices#bras6', via: 'get'
+  match '/bras7', to: 'exercices#bras7', via: 'get'
+  match '/bras8', to: 'exercices#bras8', via: 'get'
+  match '/bras9', to: 'exercices#bras9', via: 'get'
+  match '/bras10', to: 'exercices#bras10', via: 'get'
+  match '/bras11', to: 'exercices#bras11', via: 'get'
+  
+  
   match '/epaules', to: 'exercices#epaules', via: 'get'
+  match '/epaules1', to: 'exercices#epaules1', via: 'get'
+  match '/epaules2', to: 'exercices#epaules2', via: 'get'
+  match '/epaules3', to: 'exercices#epaules3', via: 'get'
+
   match '/dos1', to: 'exercices#dos', via: 'get'
  
   match '/jambes', to: 'exercices#jambes', via: 'get'
-  match '/jambes1', to: 'exercices#jambes1', via: 'get'#
+  match '/jambes1', to: 'exercices#jambes1', via: 'get'
   match '/jambes2', to: 'exercices#jambes2', via: 'get'
   match '/jambes3', to: 'exercices#jambes3', via: 'get'
   match '/jambes4', to: 'exercices#jambes4', via: 'get'
+  match '/jambes5', to: 'exercices#jambes5', via: 'get'
  
   match '/trapezes', to: 'exercices#trapezes', via: 'get'
   

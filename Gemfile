@@ -11,6 +11,7 @@ gem 'will_paginate', '3.0.4'
 gem 'bootstrap-will_paginate', '0.0.9'
 gem "paperclip", "~> 4.1"
 gem 'aws-sdk'
+ 
 
 gem 'forum_monster'
 gem 'rinku', :require => 'rails_rinku'
