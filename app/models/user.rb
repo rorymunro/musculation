@@ -25,7 +25,7 @@ validates :password, length: { minimum: 6 }
 
   # Validate the attached image is image/jpg, image/png, etc
   validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
-end
+
 
 def feed
 	Back.where("user_id = ?", id)
