@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140224224731) do
+ActiveRecord::Schema.define(version: 20140226110340) do
 
   create_table "backs", force: true do |t|
     t.integer  "pull_up"
@@ -172,8 +172,8 @@ ActiveRecord::Schema.define(version: 20140224224731) do
     t.integer  "age"
     t.integer  "taille"
     t.integer  "poids"
-    t.integer  "topics_count",        default: 0
-    t.integer  "posts_count",         default: 0
+    t.integer  "topics_count"
+    t.integer  "posts_count"
     t.string   "avatar_file_name"
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
