@@ -48,6 +48,8 @@ Musculation::Application.routes.draw do
   match '/pectoraux6', to: 'exercices#pectoraux6', via: 'get'
   match '/pectoraux7', to: 'exercices#pectoraux7', via: 'get'
   match '/pectoraux8', to: 'exercices#pectoraux8', via: 'get'
+  match '/pectoraux9', to: 'exercices#pectoraux9', via: 'get'
+  match '/pectoraux10', to: 'exercices#pectoraux10', via: 'get'
   
   match '/bras', to: 'exercices#bras', via: 'get'
   match '/bras1', to: 'exercices#bras1', via: 'get'
@@ -67,8 +69,27 @@ Musculation::Application.routes.draw do
   match '/epaules1', to: 'exercices#epaules1', via: 'get'
   match '/epaules2', to: 'exercices#epaules2', via: 'get'
   match '/epaules3', to: 'exercices#epaules3', via: 'get'
+  match '/epaules4', to: 'exercices#epaules4', via: 'get'
+  match '/epaules5', to: 'exercices#epaules5', via: 'get'
+  match '/epaules6', to: 'exercices#epaules6', via: 'get'
+  match '/epaules7', to: 'exercices#epaules7', via: 'get'
+  match '/epaules8', to: 'exercices#epaules8', via: 'get'
+  match '/epaules9', to: 'exercices#epaules9', via: 'get'
+  match '/epaules10', to: 'exercices#epaules10', via: 'get'
+  match '/epaules11', to: 'exercices#epaules11', via: 'get'
+
 
   match '/dos1', to: 'exercices#dos', via: 'get'
+  match '/dos2', to: 'exercices#dos1', via: 'get'
+  match '/dos3', to: 'exercices#dos2', via: 'get'
+  match '/dos4', to: 'exercices#dos3', via: 'get'
+  match '/dos5', to: 'exercices#dos4', via: 'get'
+  match '/dos6', to: 'exercices#dos5', via: 'get'
+  match '/dos7', to: 'exercices#dos6', via: 'get'
+  match '/dos8', to: 'exercices#dos7', via: 'get'
+  match '/dos9', to: 'exercices#dos8', via: 'get'
+  match '/dos10', to: 'exercices#dos9', via: 'get'
+  match '/dos11', to: 'exercices#dos10', via: 'get'
  
   match '/jambes', to: 'exercices#jambes', via: 'get'
   match '/jambes1', to: 'exercices#jambes1', via: 'get'
@@ -76,8 +97,22 @@ Musculation::Application.routes.draw do
   match '/jambes3', to: 'exercices#jambes3', via: 'get'
   match '/jambes4', to: 'exercices#jambes4', via: 'get'
   match '/jambes5', to: 'exercices#jambes5', via: 'get'
+  match '/jambes6', to: 'exercices#jambes6', via: 'get'
+  match '/jambes7', to: 'exercices#jambes7', via: 'get'
+  match '/jambes8', to: 'exercices#jambes8', via: 'get'
  
   match '/trapezes', to: 'exercices#trapezes', via: 'get'
+  match '/trapezes1', to: 'exercices#trapezes1', via: 'get'
+  match '/trapezes2', to: 'exercices#trapezes2', via: 'get'
+  match '/trapezes3', to: 'exercices#trapezes3', via: 'get'
+
+  match '/abdominaux', to: 'exercices#abdominaux', via: 'get'
+  match '/abdominaux1', to: 'exercices#abdominaux1', via: 'get'
+  match '/abdominaux2', to: 'exercices#abdominaux2', via: 'get'
+  match '/abdominaux3', to: 'exercices#abdominaux3', via: 'get'
+  match '/abdominaux4', to: 'exercices#abdominaux4', via: 'get'
+  match '/abdominaux5', to: 'exercices#abdominaux5', via: 'get'
+  match '/abdominaux6', to: 'exercices#abdominaux6', via: 'get'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
