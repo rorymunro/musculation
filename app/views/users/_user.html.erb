@@ -1,6 +1,6 @@
 <li>
 	<div class= "noma"><%= image_tag user.avatar.url %>
-	<h4><%= link_to user.name, user %></h4></div>
+	<h4><%= link_to user.name, user %></br></br>Squat: <%= user.squatu %></h4></div>
 	
 	<% if current_user.admin? && !current_user?(user) %>
     | <%= link_to "delete", user, method: :delete,

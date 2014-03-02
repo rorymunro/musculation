@@ -332,6 +332,80 @@
   <span class="rowing_courbere">Sets/reps:   <%= feedc_item.rowing_courbere %></span></br>
   <% end %>
 
+   <% unless feedc_item.developpe_haltere2.blank? %>
+  <span class="developpe_haltere2">Développé haltère:   <%= feedc_item.developpe_haltere2 %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.developpe_haltere2re.blank? %>
+  <span class="developpe_haltere2re">Sets/reps:   <%= feedc_item.developpe_haltere2re %></span></br>
+  <% end %>
+
+   <% unless feedc_item.lineaire_jammer.blank? %>
+  <span class="lineaire_jammer">Linéaire Jammer:   <%= feedc_item.lineaire_jammer %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.lineaire_jammerre.blank? %>
+  <span class="lineaire_jammerre">Sets/reps:   <%= feedc_item.lineaire_jammerre %></span></br>
+  <% end %>
+
+  <% unless feedc_item.elevations_lat.blank? %>
+  <span class="elevations_lat">Elévations latérales:   <%= feedc_item.elevations_lat %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.elevations_latre.blank? %>
+  <span class="elevations_latre">Sets/reps:   <%= feedc_item.elevations_latre %></span></br>
+  <% end %>
+
+  <% unless feedc_item.clean_presse.blank? %>
+  <span class="clean_presse">Clean et presse:   <%= feedc_item.clean_presse %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.clean_pressere.blank? %>
+  <span class="clean_pressere">Sets/reps:   <%= feedc_item.clean_pressere %></span></br>
+  <% end %>
+
+  <% unless feedc_item.developpe_militaire.blank? %>
+  <span class="developpe_militaire">Développé militaire:   <%= feedc_item.developpe_militaire %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.developpe_militairere.blank? %>
+  <span class="developpe_militairere">Sets/reps:   <%= feedc_item.developpe_militairere %></span></br>
+  <% end %>
+
+  <% unless feedc_item.arnold.blank? %>
+  <span class="arnold">Arnold développé haltère:   <%= feedc_item.arnold %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.arnoldre.blank? %>
+  <span class="arnoldre">Sets/reps:   <%= feedc_item.arnoldre %></span></br>
+  <% end %>
+
+ <% unless feedc_item.car_driver.blank? %>
+  <span class="car_driver">Car drivers:   <%= feedc_item.car_driver %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.car_driverre.blank? %>
+  <span class="car_driverre">Sets/reps:   <%= feedc_item.car_driverre %></span></br>
+  <% end %>
+
+<% unless feedc_item.rowing_delt.blank? %>
+  <span class="rowing_delt">Rowing barre- version delt arrière:   <%= feedc_item.rowing_delt %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.rowing_deltre.blank? %>
+  <span class="rowing_deltre">Sets/reps:   <%= feedc_item.rowing_deltre %></span></br>
+  <% end %>
+
+<% unless feedc_item.elevations_delt.blank? %>
+  <span class="elevations_delt">Elévations delt, assis et courbé:   <%= feedc_item.elevations_delt %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.elevations_deltre.blank? %>
+  <span class="elevations_deltre">Sets/reps:   <%= feedc_item.elevations_deltre %></span></br>
+  <% end %>
+
+  <% unless feedc_item.halteres_allonge.blank? %>
+  <span class="halteres_allonge">Haltères Allongé Un-bras latéral arrière élever:   <%= feedc_item.halteres_allonge %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.halteres_allongere.blank? %>
+  <span class="halteres_allongere">Sets/reps:   <%= feedc_item.halteres_allongere %></span></br>
+  <% end %>
+
+
+
+
+
  
  </div>
  <% if current_user?(feedc_item.user) %>
