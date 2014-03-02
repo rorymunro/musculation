@@ -6,7 +6,7 @@ class AddFentAPiedAndSquatUnHaltereAndHipPousseeAndSauterSurUneBoiteAndMolletsEl
     add_column :customs, :squat_un_halterere, :string
     add_column :customs, :hip_poussee, :integer
     add_column :customs, :hip_pousseere, :string
-    add_column :customs, :sauter_sur_une_boite, :intege
+    add_column :customs, :sauter_sur_une_boite, :integer
     add_column :customs, :sauter_sur_une_boitere, :string
     add_column :customs, :mollets_elevation, :integer
     add_column :customs, :mollets_elevationre, :string
