@@ -238,14 +238,11 @@ ActiveRecord::Schema.define(version: 20140302122004) do
     t.integer  "squatu"
     t.integer  "souleve_terre"
     t.integer  "devel_couche"
+    t.boolean  "admin"
     t.string   "avatar_file_name"
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
-<<<<<<< HEAD
-    t.boolean  "admin",               default: false
-=======
->>>>>>> fc85af415446cf2f50a479486b8c26246c888a26
   end
 
 end
