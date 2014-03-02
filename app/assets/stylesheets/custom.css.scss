@@ -229,8 +229,8 @@ h1{
   }
   h3{
   margin-top: 0px;
-  text-shadow: 0px 1px 2px gray;
-  font:20px tahoma;
+  text-shadow: 0px 1px 1px green;
+  font:30px tahoma;
   }
 
 
@@ -278,16 +278,7 @@ float: right;
   border-radius: 3px;
   
 }
-#yold{
-  -webkit-box-shadow: 0px 5px 10px #96c0d0;
-    -moz-box-shadow: 0px 5px 10px #96c0d0;
-    box-shadow: 0px 5px 10px #96c0d0;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -khtml-border-radius: 8px;  
-    border-radius: 5px;
-    border:solid white 2px;
-} 
+
 
 /* forms */
 
@@ -360,8 +351,8 @@ color: white;
   border: 1px solid #bbb;
   background: #2b2c34;
   border-radius: 6px;
-    margin-left:100px;
-    margin-right: 100px;
+    //margin-left:100px;
+    //margin-right: 100px;
     margin-top: 5px;
 }
 .span8 {
@@ -554,6 +545,42 @@ width: 50%;
   color: black;
   font:15px tahoma;
 }
-.span12 {
-  text-align:left;
-}
+
+#yold{
+  -webkit-box-shadow: 0px 5px 10px #96c0d0;
+    -moz-box-shadow: 0px 5px 10px #96c0d0;
+    box-shadow: 0px 5px 10px #96c0d0;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -khtml-border-radius: 8px;  
+    border-radius: 5px;
+    border:solid white 2px;
+    }
+
+  .jambes {
+  color: #ff4040;
+  }
+
+  .poiter {
+    color: #ff5300;
+  }
+
+  .trips {
+    color: #4d54d8;
+  }
+  .bics {
+    color: gray;
+  }
+
+  .dosa {
+  color: c9007a;
+
+
+  }
+  .best {
+  color: white;
+  border: 1px solid #bbb;
+  background: #2b2c34;
+  border-radius: 4px;
+  margin-top: 5px;
+  }

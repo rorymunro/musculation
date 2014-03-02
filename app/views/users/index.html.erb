@@ -4,7 +4,15 @@
 <%= will_paginate %>
 
 <ul class="users">
-  <%= render @users %>
+
+  
+  
+  <%= render @users.order("squatu DESC").all %>
+  
+
+
+
+
 </ul>
 
 <%= will_paginate %>

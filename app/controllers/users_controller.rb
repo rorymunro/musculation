@@ -61,7 +61,7 @@ end
   private
 
     def user_params
-      params.require(:user).permit(:avatar, :name, :email, :password, :poid, :location, :taille, :age,
+      params.require(:user).permit(:squatu, :devel_couche, :souleve_terre, :avatar, :name, :email, :password, :poid, :location, :taille, :age,
                                    :password_confirmation)
     end
 

@@ -10,10 +10,18 @@
 
   <div class="span6">
     <h1><%= @user.name %></h1><hr></br>
-        Location: <%= @user.location %></br> 
+        <h3>Location: <%= @user.location %></br> 
         Poids: <%= @user.poid %>Kg</br>
         Age: <%= @user.age %>ans</br>
-        Taille: <%= @user.taille %>cm</br>
+        Taille: <%= @user.taille %>cm</br></h3>
+
+        <div class= "best">Meillure Squat: <%= @user.squatu %>Kg</br>
+        Meilleur développé couché: <%= @user.devel_couche %>ans</br>
+        Meilleur soulevé de terre: <%= @user.souleve_terre %>cm</br></div>
+
+
+
+
 </div>
 <div class="span3">
 

@@ -5,6 +5,7 @@
   </span></br>
   <div class= "tings">
 
+
   <% unless feedc_item.pull_up1.blank? %>
   <span class="pull_up1">Pull up:   <%= feedc_item.pull_up1 %>kg</span> |  
   <% end %>
@@ -13,19 +14,68 @@
   <% end %>
   
   <% unless feedc_item.deadlift1.blank? %>
-  <span class="deadlift1">Deadlift:   <%= feedc_item.deadlift1 %>kg</span> | 
+  <span class="deadlift1">Soulevé de terre:   <%= feedc_item.deadlift1 %>kg</span> | 
   <% end %>
   <% unless feedc_item.deadliftre.blank? %>
   <span class="deadliftre">Sets/reps:   <%= feedc_item.deadliftre %></span></br>
   <% end %>
   
-  <% unless feedc_item.row1.blank? %>
-  <span class="row1">Row:   <%= feedc_item.row1 %>kg</span> | 
+  <% unless feedc_item.hyperextensions.blank? %>
+  <span class="hyperextensions">hyperextensions:   <%= feedc_item.hyperextensions %>kg</span> | 
   <% end %>
-  <% unless feedc_item.rowre.blank? %>
-  <span class="rowre">Sets/reps:   <%= feedc_item.rowre %></span></br>
+  <% unless feedc_item.hyperextensionsre.blank? %>
+  <span class="hyperextensionsre">Sets/reps:   <%= feedc_item.hyperextensionsre %></span></br>
   <% end %>
   
+  <% unless feedc_item.souleve_jambes_raides1.blank? %>
+  <span class="souleve_jambes_raides1">Soulevé de terre- jambes raides:   <%= feedc_item.souleve_jambes_raides1 %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.souleve_jambes_raides1re.blank? %>
+  <span class="souleve_jambes_raides1re">Sets/reps:   <%= feedc_item.souleve_jambes_raides1re %></span></br>
+  <% end %>
+
+  <% unless feedc_item.superman.blank? %>
+  <span class="superman">Superman:   <%= feedc_item.superman %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.supermanre.blank? %>
+  <span class="supermanre">Sets/reps:   <%= feedc_item.supermanre %></span></br>
+  <% end %>
+
+  <% unless feedc_item.poingnee_inverse_rowing.blank? %>
+  <span class="poingnee_inverse_rowing">Poignée inverse courbé rowing:   <%= feedc_item.poingnee_inverse_rowing %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.poingnee_inverse_rowingre.blank? %>
+  <span class="poingnee_inverse_rowingre">Sets/reps:   <%= feedc_item.poingnee_inverse_rowingre %></span></br>
+  <% end %>
+
+  <% unless feedc_item.rowing_un_bras.blank? %>
+  <span class="rowing_un_bras">Rowing un bras:   <%= feedc_item.rowing_un_bras %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.rowing_un_brasre.blank? %>
+  <span class="rowing_un_brasre">Sets/reps:   <%= feedc_item.rowing_un_brasre %></span></br>
+  <% end %>
+
+  <% unless feedc_item.rowing_barre_long1.blank? %>
+  <span class="rowing_barre_long1">Courbé rowing barre long sur ​​deux-Bras:   <%= feedc_item.rowing_barre_long1 %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.rowing_barre_long1re.blank? %>
+  <span class="rowing_barre_long1re">Sets/reps:   <%= feedc_item.rowing_barre_long1re %></span></br>
+  <% end %>
+
+   <% unless feedc_item.inverse_rowing.blank? %>
+  <span class="inverse_rowing">Rowing inversé:   <%= feedc_item.inverse_rowing %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.inverse_rowingre.blank? %>
+  <span class="inverse_rowingre">Sets/reps:   <%= feedc_item.inverse_rowingre %></span></br>
+  <% end %>
+
+  
+
+
+
+
+
+
   <% unless feedc_item.bicep_curl1.blank? %>
   <span class="bicep_curl1">Bicep curl:   <%= feedc_item.bicep_curl1 %>kg</span> | 
   <% end %>
@@ -34,12 +84,45 @@
   <% end %>
   
   <% unless feedc_item.hammer1.blank? %>
-  <span class="hammer1">Hammer:   <%= feedc_item.hammer1 %>kg</span> | 
+  <span class="hammer1">Hammer curl:   <%= feedc_item.hammer1 %>kg</span> | 
   <% end %>
   <% unless feedc_item.hammerre.blank? %>
   <span class="hammerre">Sets/reps:   <%= feedc_item.hammerre %></span></br>
   <% end %>
+
+  <% unless feedc_item.hammer_incline.blank? %>
+  <span class="hammer_incline">Hammer curl- incliné:   <%= feedc_item.hammer_incline %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.hammer_inclinere.blank? %>
+  <span class="hammer_inclinere">Sets/reps:   <%= feedc_item.hammer_inclinere %></span></br>
+  <% end %>
+
+  <% unless feedc_item.zottoman.blank? %>
+  <span class="zottoman">Zottman curl:   <%= feedc_item.zottoman %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.zottomanre.blank? %>
+  <span class="zottomanre">Sets/reps:   <%= feedc_item.zottomanre %></span></br>
+  <% end %>
+
+  <% unless feedc_item.concentration.blank? %>
+  <span class="concentration">Curl concentration:   <%= feedc_item.concentration %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.concentrationre.blank? %>
+  <span class="concentrationre">Sets/reps:   <%= feedc_item.concentrationre %></span></br>
+  <% end %>
   
+  <% unless feedc_item.chin_up1.blank? %>
+  <span class="chin_up1">Chin up:   <%= feedc_item.chin_up1 %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.chin_up1re.blank? %>
+  <span class="chin_up1re">Sets/reps:   <%= feedc_item.chin_up1re %></span></br>
+  <% end %>
+
+
+
+
+
+
   <% unless feedc_item.developpe_couche1.blank? %>
   <span class="developpe_couche1">Developpe couche:   <%= feedc_item.developpe_couche1 %>kg</span> | 
   <% end %>
@@ -68,6 +151,50 @@
   <span class="ecarte_inclinere">Sets/reps:   <%= feedc_item.ecarte_inclinere %></span></br>
   <% end %>
 
+  <% unless feedc_item.horloge_pompes.blank? %>
+  <span class="horloge_pompes">Horloge pompes:   <%= feedc_item.horloge_pompes %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.horloge_pompesre.blank? %>
+  <span class="horloge_pompesre">Sets/reps:   <%= feedc_item.horloge_pompesre %></span></br>
+  <% end %>
+
+  <% unless feedc_item.pompes.blank? %>
+  <span class="pompes">Pompes:   <%= feedc_item.pompes %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.pompesre.blank? %>
+  <span class= "pompesre">Sets/reps:   <%= feedc_item.pompesre %></span></br>
+  <% end %>
+
+  <% unless feedc_item.pompes_surleves.blank? %>
+  <span class="pompes_surleves">Pompes avec les pieds surélevés:   <%= feedc_item.pompes_surleves %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.pompes_surlevesre.blank? %>
+  <span class= "pompes_surlevesre">Sets/reps:   <%= feedc_item.pompes_surlevesre %></span></br>
+  <% end %>
+
+  <% unless feedc_item.developpe_decline.blank? %>
+  <span class="developpe_decline">Développé couché décliné- prise large:   <%= feedc_item.developpe_decline %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.developpe_declinere.blank? %>
+  <span class= "developpe_declinere">Sets/reps:   <%= feedc_item.developpe_declinere %></span></br>
+  <% end %>
+
+  <% unless feedc_item.dips_poitrine.blank? %>
+  <span class="dips_poitrine">Dips- version poitrine:   <%= feedc_item.dips_poitrine %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.dips_poitrinere.blank? %>
+  <span class= "dips_poitrinere">Sets/reps:   <%= feedc_item.dips_poitrinere %></span></br>
+  <% end %>
+
+  <% unless feedc_item.pompes_mains_surleves.blank? %>
+  <span class="pompes_mains_surleves">Pompes avec les mains surélevés:   <%= feedc_item.pompes_mains_surleves %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.pompes_mains_surlevesre.blank? %>
+  <span class= "pompes_mains_surlevesre">Sets/reps:   <%= feedc_item.pompes_mains_surlevesre %></span></br>
+  <% end %>
+
+
+
 <% unless feedc_item.haltere_au_font1.blank? %>
   <span class="haltere_au_font1">Haltere au font:   <%= feedc_item.haltere_au_font1 %>kg</span> | 
   <% end %>
@@ -75,12 +202,107 @@
   <span class="haltere_au_fontre">Sets/reps:   <%= feedc_item.haltere_au_fontre %></span></br>
   <% end %>
 
+  <% unless feedc_item.ez_barre_front.blank? %>
+  <span class="ez_barre_front">EZ barre front- décliné:   <%= feedc_item.ez_barre_front %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.ez_barre_frontre.blank? %>
+  <span class="ez_barre_frontre">Sets/reps:   <%= feedc_item.ez_barre_frontre %></span></br>
+  <% end %>
+
+  <% unless feedc_item.dip_tricep.blank? %>
+  <span class="dip_tricep">Dip- version tricep:   <%= feedc_item.dip_tricep %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.dip_tricepre.blank? %>
+  <span class="dip_tricepre">Sets/reps:   <%= feedc_item.dip_tricepre %></span></br>
+  <% end %>
+
+  <% unless feedc_item.dip_de_banc.blank? %>
+  <span class="dip_de_banc">Dip de banc:   <%= feedc_item.dip_de_banc %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.dip_de_bancre.blank? %>
+  <span class="dip_de_bancre">Sets/reps:   <%= feedc_item.dip_de_bancre %></span></br>
+  <% end %>
+
+  <% unless feedc_item.body_up.blank? %>
+  <span class="body_up">Body up:   <%= feedc_item.body_up %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.body_upre.blank? %>
+  <span class="body_upre">Sets/reps:   <%= feedc_item.body_upre %></span></br>
+  <% end %>
+
+  <% unless feedc_item.extensions_tete.blank? %>
+  <span class="extensions_tete">Extensions au-dessus de la tête:   <%= feedc_item.extensions_tete %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.extensions_tetere.blank? %>
+  <span class="extensions_tetere">Sets/reps:   <%= feedc_item.extensions_tetere %></span></br>
+  <% end %>
+
+
+
+
+
+
+
+
   <% unless feedc_item.squat1.blank? %>
   <span class="squat1">Squat:   <%= feedc_item.squat1 %>kg</span> | 
   <% end %>
   <% unless feedc_item.squatre.blank? %>
   <span class="squatre">Sets/reps:   <%= feedc_item.squatre %></span></br>
   <% end %>
+
+  <% unless feedc_item.fent_a_pied.blank? %>
+  <span class="fent_a_pied">Fente à pied- barre   <%= feedc_item.fent_a_pied %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.fent_a_piedre.blank? %>
+  <span class="squatre">Sets/reps:   <%= feedc_item.fent_a_piedre %></span></br>
+  <% end %>
+
+  <% unless feedc_item.squat_un_haltere.blank? %>
+  <span class="squat_un_haltere">Squat- un haltère   <%= feedc_item.squat_un_haltere %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.squat_un_halterere.blank? %>
+  <span class="squat_un_haltere">Sets/reps:   <%= feedc_item.squat_un_halterere %></span></br>
+  <% end %>
+
+   <% unless feedc_item.hip_poussee.blank? %>
+  <span class="hip_poussee">Hip poussée   <%= feedc_item.hip_poussee %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.hip_pousseere.blank? %>
+  <span class="hip_pousseere">Sets/reps:   <%= feedc_item.hip_pousseere %></span></br>
+  <% end %>
+
+   <% unless feedc_item.sauter_sur_une_boite.blank? %>
+  <span class="sauter_sur_une_boite">Sauter sur une boîte   <%= feedc_item.sauter_sur_une_boite %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.sauter_sur_une_boitere.blank? %>
+  <span class="sauter_sur_une_boitere">Sets/reps:   <%= feedc_item.sauter_sur_une_boitere %></span></br>
+  <% end %>
+
+  <% unless feedc_item.mollets_elevation.blank? %>
+  <span class="mollets_elevation">Mollets elévation   <%= feedc_item.mollets_elevation %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.mollets_elevationre.blank? %>
+  <span class="mollets_elevationre">Sets/reps:   <%= feedc_item.mollets_elevationre %></span></br>
+  <% end %>
+
+  <% unless feedc_item.souleve_jambes_raides.blank? %>
+  <span class="souleve_jambes_raides">Soulevé de terre- jambes raides   <%= feedc_item.souleve_jambes_raides %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.souleve_jambes_raidesre.blank? %>
+  <span class="souleve_jambes_raidesre">Sets/reps:   <%= feedc_item.souleve_jambes_raidesre %></span></br>
+  <% end %>
+
+  <% unless feedc_item.snatch_souleve.blank? %>
+  <span class="snatch_souleve">Snatch Soulevé   <%= feedc_item.snatch_souleve %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.snatch_soulevere.blank? %>
+  <span class="snatch_soulevere">Sets/reps:   <%= feedc_item.snatch_soulevere %></span></br>
+  <% end %>
+
+
+
+
 
   <% unless feedc_item.rowing_menton1.blank? %>
   <span class="rowing_menton1">Rowing menton:   <%= feedc_item.rowing_menton1 %>kg</span> | 
