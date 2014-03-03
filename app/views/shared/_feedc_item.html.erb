@@ -406,6 +406,72 @@
 
 
 
+
+<% unless feedc_item.landmine.blank? %>
+  <span class="landmine">Landmine 180s:   <%= feedc_item.landmine %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.landminere.blank? %>
+  <span class="landminere">Sets/reps:   <%= feedc_item.landminere %></span></br>
+  <% end %>
+
+  <% unless feedc_item.araignee.blank? %>
+  <span class="araignee">Araignée rampement:   <%= feedc_item.araignee %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.araigneere.blank? %>
+  <span class="araigneere">Sets/reps:   <%= feedc_item.araigneere %></span></br>
+  <% end %>
+
+  <% unless feedc_item.releves_jambes.blank? %>
+  <span class="releves_jambes">Relevés de jambes:   <%= feedc_item.releves_jambes %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.releves_jambesre.blank? %>
+  <span class="releves_jambesre">Sets/reps:   <%= feedc_item.releves_jambesre %></span></br>
+  <% end %>
+
+  <% unless feedc_item.plank.blank? %>
+  <span class="plank">Plank:   <%= feedc_item.plank %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.plankre.blank? %>
+  <span class="plankre">Sets/reps:   <%= feedc_item.plankre %></span></br>
+  <% end %>
+
+  <% unless feedc_item.haltere_corbure.blank? %>
+  <span class="haltere_corbure">Haltère courbure latérale:   <%= feedc_item.haltere_corbure %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.haltere_corburere.blank? %>
+  <span class="haltere_corburere">Sets/reps:   <%= feedc_item.haltere_corburere %></span></br>
+  <% end %>
+
+<% unless feedc_item.releves_suspension.blank? %>
+  <span class="releves_suspension">Relevé de jambes en suspension:   <%= feedc_item.releves_suspension %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.releves_suspensionre.blank? %>
+  <span class="releves_suspensionre">Sets/reps:   <%= feedc_item.releves_suspensionre %></span></br>
+  <% end %>
+
+
+<% unless feedc_item.haussement_epaules.blank? %>
+  <span class="haussement_epaules">Haussement d'épaules- haltères:   <%= feedc_item.haussement_epaules %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.haussement_epaulesre.blank? %>
+  <span class="haussement_epaulesre">Sets/reps:   <%= feedc_item.haussement_epaulesre %></span></br>
+  <% end %>
+
+<% unless feedc_item.rowing_debout.blank? %>
+  <span class="rowing_debout">Rowing debout- haltères:   <%= feedc_item.rowing_debout %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.rowing_deboutre.blank? %>
+  <span class="rowing_deboutre">Sets/reps:   <%= feedc_item.rowing_deboutre %></span></br>
+  <% end %>
+
+  <% unless feedc_item.couche_plaque.blank? %>
+  <span class="couche_plaque">Couché sur le ventre, la plaque résistance
+:   <%= feedc_item.couche_plaque %>kg</span> | 
+  <% end %>
+  <% unless feedc_item.couche_plaquere.blank? %>
+  <span class="couche_plaquere">Sets/reps:   <%= feedc_item.couche_plaquere %></span></br>
+  <% end %>
+
  
  </div>
  <% if current_user?(feedc_item.user) %>

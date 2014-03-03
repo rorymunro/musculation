@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140302152119) do
+ActiveRecord::Schema.define(version: 20140303103232) do
 
   create_table "backs", force: true do |t|
     t.integer  "pull_up"
@@ -150,6 +150,24 @@ ActiveRecord::Schema.define(version: 20140302152119) do
     t.string   "elevations_deltre"
     t.integer  "halteres_allonge"
     t.string   "halteres_allongere"
+    t.integer  "landmine"
+    t.string   "landminere"
+    t.integer  "araignee"
+    t.string   "araigneere"
+    t.integer  "releves_jambes"
+    t.string   "releves_jambesre"
+    t.integer  "plank"
+    t.string   "plankre"
+    t.integer  "haltere_corbure"
+    t.string   "haltere_corburere"
+    t.integer  "releves_suspension"
+    t.string   "releves_suspensionre"
+    t.integer  "haussement_epaules"
+    t.string   "haussement_epaulesre"
+    t.integer  "rowing_debout"
+    t.string   "rowing_deboutre"
+    t.integer  "couche_plaque"
+    t.string   "couche_plaquere"
   end
 
   create_table "day1s", force: true do |t|
