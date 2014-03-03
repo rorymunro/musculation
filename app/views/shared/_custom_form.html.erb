@@ -1,6 +1,13 @@
 <%= form_for(@custom) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
   <div class="field">
+      <%= link_to "poitrine", "#poit" %>
+      <%= link_to "jambes", "#jams" %>
+      <%= link_to "epaules", "#eps" %>
+      <%= link_to "triceps", "#ts" %>
+      <%= link_to "biceps", "#bs" %>
+      <%= link_to "abs", "#abss" %>
+      
     <div class= "dosa"><h2>Dos</h2>
     <div class= "lef"><%= f.label :pull_up %>
     <%= f.number_field :pull_up1 %></div>
@@ -57,7 +64,7 @@
       
 
 
-<div class= "poiter"><h2>Poitrine</h2>
+<div class= "poiter", id="poit"><h2>Poitrine</h2>
      
       <div class= "lef"><%= f.label :developpe_couche %>
       <%= f.number_field :developpe_couche1 %></div>
@@ -111,7 +118,7 @@
 
       </div>
 
-<div class= "jambes"><h2>Jambes</h2>
+<div class= "jambes", id= "jams"><h2>Jambes</h2>
       <div class= "lef"><%= f.label :squat %>
       <%= f.number_field :squat1 %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
@@ -156,7 +163,7 @@
      
 
 
-<div><h2>Epaules</h2>
+<div id= "eps"><h2>Epaules</h2>
       
 
       <div class= "lef"><%= f.label :rowing_menton %>
@@ -225,7 +232,7 @@
      </div>
 
 
-      <div class="trips"><h2>Triceps</h2>
+      <div class="trips", id= "ts"><h2>Triceps</h2>
 
       <div class= "lef"><%= f.label :haltere_au_front %>
       <%= f.number_field :haltere_au_font1 %></div>
@@ -262,7 +269,7 @@
 
       </div>
 
-      <div class= "bics"><h2>Biceps</h2>
+      <div class= "bics", id= "bs"><h2>Biceps</h2>
       <div class= "lef"><%= f.label :bicep_curl %>
       <%= f.number_field :bicep_curl1 %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
@@ -304,7 +311,7 @@
 
       
 
-  <div class= "abs"><h2>Abdonimaux</h2>
+  <div class= "abs", id= "abss"><h2>Abdonimaux</h2>
 
 
       <div class= "lef"><%= f.label :landmine_180s %>
