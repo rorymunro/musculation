@@ -18,6 +18,7 @@ Musculation::Application.routes.draw do
   resources :day2s, only: [:create, :destroy]
   resources :day3s, only: [:create, :destroy]
   resources :customs, only: [:create, :destroy]
+  resources :jambes, only: [:create, :destroy]
   
 
   root  'static_pages#home'
@@ -30,7 +31,8 @@ Musculation::Application.routes.draw do
   match '/standard',   to: 'static_pages#standard',   via: 'get'
   match '/dos',   to: 'static_pages#dos',   via: 'get'
   match '/poitrin',   to: 'static_pages#poitrin',   via: 'get'
-  match '/cuisses_epaules',   to: 'static_pages#cuisses_epaules',   via: 'get'
+  match '/epaule',   to: 'static_pages#epaule',   via: 'get'
+  match '/jambes01',   to: 'static_pages#jambes01',   via: 'get'
   match '/jour1',   to: 'static_pages#jour1',   via: 'get'
   match '/jour2',   to: 'static_pages#jour2',   via: 'get'
   match '/jour3',   to: 'static_pages#jour3',   via: 'get'

@@ -1,0 +1,6 @@
+<% if @feedj_items.any? %>
+  <ol class="jambes">
+    <%= render partial: 'shared/feedj_item', collection: @feedj_items %>
+  </ol>
+  <%= will_paginate @feedj_items %>
+<% end %>

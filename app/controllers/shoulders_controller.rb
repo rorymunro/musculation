@@ -6,16 +6,16 @@ class ShouldersController < ApplicationController
   	@shoulder = current_user.shoulders.build(shoulder_params)
   	if @shoulder.save
   		flash[:success] = "poste créé!"
-  		redirect_to cuisses_epaules_url
+  		redirect_to epaule_url
   	else
   		@feeds_items = []
-  		render 'static_pages/cuisses_epaules'
+  		render 'static_pages/epaule'
   	end
   end
 
   def destroy
   	@shoulder.destroy
-  	redirect_to cuisses_epaules_url
+  	redirect_to epaule_url
   end
 
 private
@@ -25,7 +25,7 @@ private
 	end
 def correct_user
       @shoulder = current_user.shoulders.find_by(id: params[:id])
-      redirect_to cuisses_epaules_url if @shoulder.nil?
+      redirect_to epaule_url if @shoulder.nil?
     end
 
 

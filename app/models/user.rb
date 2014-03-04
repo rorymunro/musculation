@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
 	has_many :poitrines, dependent: :destroy
 	has_many :backs, dependent: :destroy
+  has_many :jambes, dependent: :destroy
 	has_many :shoulders, dependent: :destroy
     has_many :day1s, dependent: :destroy
     has_many :day2s, dependent: :destroy
@@ -36,6 +37,9 @@ def feedp
 end
 def feeds
 	Shoulder.where("user_id = ?", id)
+end
+def feedj
+  Jambe.where("user_id = ?", id)
 end
 def feed1
 	Day1.where("user_id = ?", id)

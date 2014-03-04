@@ -1,0 +1,18 @@
+<%= form_for(@jambe) do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+  <div class="field">
+    <%= f.label :squat %>
+      <%= f.number_field :squat3 %>
+
+      <%= f.label :fente_à_pied %>
+      <%= f.number_field :fent_a_pied3 %>
+
+      <%= f.label :sauter_sur_une_boîte %>
+      <%= f.number_field :sauter3 %>
+  
+      
+  
+  
+  </div>
+  <%= f.submit "Post", class: "btn btn-large btn-primary" %>
+<% end %>

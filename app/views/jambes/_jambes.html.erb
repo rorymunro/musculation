@@ -1,0 +1,12 @@
+<li>
+  <span class="content"><%= jambe.content %></span>
+  <span class="timestamp">
+    Posté le <%= feedj_item.created_at.strftime("%d, %b, %Y") %>.
+  </span>
+</li>
+<% if current_user?(jambe.user) %>
+    <%= link_to "annuler", jambe, method: :delete,
+                                     data: { confirm: "You sure?" },
+                                     title: jambe %>
+  <% end %>
+</li>

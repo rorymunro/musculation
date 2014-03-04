@@ -1,0 +1,19 @@
+<li id="<%= feedj_item.id %>">
+  
+  <span class="timestamp">
+    Posté le <%= feedj_item.created_at.strftime("%d, %b, %Y") %>.
+  </span></br>
+  <div class= "tings">
+   
+  <span class="squat3">Squat:   <%= feedj_item.squat3 %>kgs</span></br>
+
+  <span class="fent_a_pied3">Fente à pied:   <%= feedj_item.fent_a_pied3 %>kgs</span></br>
+ 
+  <span class="sauter3">Sauter sur une boîte:   <%= feedj_item.sauter3 %>kgs</span>
+ </div>
+ <% if current_user?(feedj_item.user) %>
+    <%= link_to "annuler", feedj_item, method: :delete,
+                                     data: { confirm: "You sure?" },
+                                     title: feedj_item %>
+  <% end %>
+</li>

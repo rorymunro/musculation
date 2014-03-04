@@ -5,7 +5,7 @@
   </span>
 </li>
 <% if current_user?(back.user) %>
-    <%= link_to "delete", back, method: :delete,
+    <%= link_to "annuler", back, method: :delete,
                                      data: { confirm: "You sure?" },
                                      title: back %>
   <% end %>

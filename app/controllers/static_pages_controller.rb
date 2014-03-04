@@ -37,7 +37,15 @@ end
 
   end
 end
-def cuisses_epaules
+def jambes01
+    if signed_in?
+    @jambe = current_user.jambes.build 
+    @feedj_items = current_user.feedj.paginate(page: params[:page])
+
+  end
+end
+
+def epaule
     if signed_in?
     @shoulder = current_user.shoulders.build 
     @feeds_items = current_user.feeds.paginate(page: params[:page])
