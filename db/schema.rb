@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140303103232) do
+ActiveRecord::Schema.define(version: 20140303154658) do
 
   create_table "backs", force: true do |t|
     t.integer  "pull_up"
@@ -168,6 +168,8 @@ ActiveRecord::Schema.define(version: 20140303103232) do
     t.string   "rowing_deboutre"
     t.integer  "couche_plaque"
     t.string   "couche_plaquere"
+    t.string   "exercise_custom"
+    t.string   "exercise_customre"
   end
 
   create_table "day1s", force: true do |t|

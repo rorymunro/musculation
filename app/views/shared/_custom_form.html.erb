@@ -1,6 +1,13 @@
 <%= form_for(@custom) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
   <div class="field">
+<div class= "cust"><h2>Custom exercise</h2>
+    <div class= "lef"><%= f.label :custom_exercise %>
+    <%= f.text_field :exercise_custom %></div>
+      
+      <div class= "rig"><%= f.label :Poids_Reps_et_sets %>
+      <%= f.text_field :exercise_customre %></div>
+
       <%= link_to "poitrine", "#poit" %>
       <%= link_to "jambes", "#jams" %>
       <%= link_to "epaules", "#eps" %>

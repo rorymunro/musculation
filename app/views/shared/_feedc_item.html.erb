@@ -4,7 +4,12 @@
     Posté le <%= feedc_item.created_at.strftime("%d, %b, %Y") %>.
   </span></br>
   <div class= "tings">
-
+ <% unless feedc_item.exercise_custom.blank? %>
+  <span class="exercise_custom"><%= feedc_item.exercise_custom %></span> |  
+  <% end %>
+  <% unless feedc_item.exercise_customre.blank? %>
+  <span class="exercise_customre">Poids/Sets et Reps:   <%= feedc_item.exercise_customre %></span></br>
+  <% end %>
 
   <% unless feedc_item.pull_up1.blank? %>
   <span class="pull_up1">Pull up:   <%= feedc_item.pull_up1 %>kg</span> |  
