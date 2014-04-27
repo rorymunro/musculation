@@ -1,65 +1,65 @@
 <%= form_for(@custom) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
   <div class="field">
-<div class= "cust"><h2>Custom exercise</h2>
+<div class= "custe"><h2>Custom exercise</h2></div>
     <div class= "lef"><%= f.label :custom_exercise %>
     <%= f.text_field :exercise_custom %></div>
       
       <div class= "rig"><%= f.label :Poids_Reps_et_sets %>
       <%= f.text_field :exercise_customre %></div>
 
-      <%= link_to "poitrine", "#poit" %>
-      <%= link_to "jambes", "#jams" %>
-      <%= link_to "epaules", "#eps" %>
-      <%= link_to "triceps", "#ts" %>
-      <%= link_to "biceps", "#bs" %>
-      <%= link_to "abs", "#abss" %>
+     <div> <%= link_to "poitrine", "#poit" %>&nbsp
+      <%= link_to "jambes", "#jams" %>&nbsp
+      <%= link_to "epaules", "#eps" %>&nbsp
+      <%= link_to "triceps", "#ts" %>&nbsp
+      <%= link_to "biceps", "#bs" %>&nbsp
+      <%= link_to "abs", "#abss" %></div>
       
     <div class= "dosa"><h2>Dos</h2>
     <div class= "lef"><%= f.label :pull_up %>
-    <%= f.number_field :pull_up1 %></div>
+    <%= f.number_field :pull_up1, :placeholder => 'kg' %></div>
       
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :pull_upre %></div>
 
       <div class= "lef"><%= f.label :soulevé_de_terre %>
-      <%= f.number_field :deadlift1 %></div>
+      <%= f.number_field :deadlift1, :placeholder => 'kg' %></div>
 
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :deadliftre %></div>
 
       <div class= "lef"><%= f.label :hyperextensions %>
-      <%= f.number_field :hyperextensions %></div>
+      <%= f.number_field :hyperextensions, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :hyperextensionsre %></div>
 
       <div class= "lef"><%= f.label :Soulevé_de_terre_jambes_raides %>
-      <%= f.number_field :souleve_jambes_raides1 %></div>
+      <%= f.number_field :souleve_jambes_raides1, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :souleve_jambes_raides1re %></div>
 
       <div class= "lef"><%= f.label :superman %>
-      <%= f.number_field :superman %></div>
+      <%= f.number_field :superman, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :supermanre %></div>
 
       <div class= "lef"><%= f.label :Poignée_inverse_courbé_rowing %>
-      <%= f.number_field :poingnee_inverse_rowing %></div>
+      <%= f.number_field :poingnee_inverse_rowing, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :poingnee_inverse_rowingre %></div>
 
       <div class= "lef"><%= f.label :rowing_un_bras %>
-      <%= f.number_field :rowing_un_bras %></div>
+      <%= f.number_field :rowing_un_bras, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :rowing_un_brasre %></div>
 
       <div class= "lef"><%= f.label :Courbé_rowing_barre_long_sur %>
-      <%= f.number_field :rowing_barre_long1 %></div>
+      <%= f.number_field :rowing_barre_long1, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :rowing_barre_long1re %></div>
 
       <div class= "lef"><%= f.label :Rowing_inversé %>
-      <%= f.number_field :inverse_rowing %></div>
+      <%= f.number_field :inverse_rowing, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :inverse_rowingre %></div>
 
@@ -74,52 +74,52 @@
 <div class= "poiter", id="poit"><h2>Poitrine</h2>
      
       <div class= "lef"><%= f.label :developpe_couche %>
-      <%= f.number_field :developpe_couche1 %></div>
+      <%= f.number_field :developpe_couche1, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :developpe_couchere %></div>
 
       <div class= "lef"><%= f.label :developpe_incline %>
-      <%= f.number_field :developpe_incline1 %></div>
+      <%= f.number_field :developpe_incline1, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :developpe_inclinere %></div>
 
       <div class= "lef"><%= f.label :ecarte_couche %>
-      <%= f.number_field :ecarte_couche %></div>
+      <%= f.number_field :ecarte_couche, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :ecarte_couchere %></div>
   
       <div class= "lef"><%= f.label :ecarte_incline %>
-      <%= f.number_field :ecarte_incline1 %></div>
+      <%= f.number_field :ecarte_incline1, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :ecarte_inclinere %></div>
 
       <div class= "lef"><%= f.label :horloge_pompes %>
-      <%= f.number_field :horloge_pompes %></div>
+      <%= f.number_field :horloge_pompes, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :horloge_pompesre %></div>
 
       <div class= "lef"><%= f.label :pompes %>
-      <%= f.number_field :pompes %></div>
+      <%= f.number_field :pompes, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :pompesre %></div>
 
       <div class= "lef"><%= f.label :pompes_avec_les_pieds_surélevés %>
-      <%= f.number_field :pompes_surleves %></div>
+      <%= f.number_field :pompes_surleves, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :pompes_surlevesre %></div>
 
       <div class= "lef"><%= f.label :Développé_couché_décliné_prise_large %>
-      <%= f.number_field :developpe_decline %></div>
+      <%= f.number_field :developpe_decline, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :developpe_declinere %></div>
 
       <div class= "lef"><%= f.label :Dips_version_poitrine %>
-      <%= f.number_field :dips_poitrine %></div>
+      <%= f.number_field :dips_poitrine, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :dips_poitrinere %></div>
 
       <div class= "lef"><%= f.label :Pompes_avec_les_mains_surélevés %>
-      <%= f.number_field :pompes_mains_surleves %></div>
+      <%= f.number_field :pompes_mains_surleves, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :pompes_mains_surlevesre %></div>
 
@@ -127,43 +127,43 @@
 
 <div class= "jambes", id= "jams"><h2>Jambes</h2>
       <div class= "lef"><%= f.label :squat %>
-      <%= f.number_field :squat1 %></div>
+      <%= f.number_field :squat1, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :squatre %></div>
 
       <div class= "lef"><%= f.label :Fente_à_pied_barre %>
-      <%= f.number_field :fent_a_pied %></div>
+      <%= f.number_field :fent_a_pied, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :fent_a_piedre %></div>
 
       <div class= "lef"><%= f.label :Squat_un_haltère %>
-      <%= f.number_field :squat_un_haltere %></div>
+      <%= f.number_field :squat_un_haltere, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :squat_un_halterere %></div>
       
 
       <div class= "lef"><%= f.label :Hip_poussée %>
-      <%= f.number_field :hip_poussee %></div>
+      <%= f.number_field :hip_poussee, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :hip_pousseere %></div>
 
       <div class= "lef"><%= f.label :Sauter_sur_une_boîte %>
-      <%= f.number_field :sauter_sur_une_boite %></div>
+      <%= f.number_field :sauter_sur_une_boite, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :sauter_sur_une_boitere %></div>
 
       <div class= "lef"><%= f.label :Mollets_elévation %>
-      <%= f.number_field :mollets_elevation %></div>
+      <%= f.number_field :mollets_elevation, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :mollets_elevationre %></div>
 
       <div class= "lef"><%= f.label :Soulevé_de_terre_jambes_raides %>
-      <%= f.number_field :souleve_jambes_raides %></div>
+      <%= f.number_field :souleve_jambes_raides, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :souleve_jambes_raidesre %></div>
 
       <div class= "lef"><%= f.label :Snatch_soulevé %>
-      <%= f.number_field :snatch_souleve %></div>
+      <%= f.number_field :snatch_souleve, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :snatch_soulevere %></div>
 </div>
@@ -174,63 +174,63 @@
       
 
       <div class= "lef"><%= f.label :rowing_menton %>
-      <%= f.number_field :rowing_menton1 %></div>
+      <%= f.number_field :rowing_menton1, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :rowing_mentonre %></div>
 
      <div class= "lef"><%= f.label :elevations_devant %>
-      <%= f.number_field :elevations_devant1 %></div>
+      <%= f.number_field :elevations_devant1, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :elevations_devantre %></div>
   
       <div class= "lef"><%= f.label :rowing_courbe %>
-      <%= f.number_field :rowing_courbe1 %></div>
+      <%= f.number_field :rowing_courbe1, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :rowing_courbere %></div>
 
       <div class= "lef"><%= f.label :développé_haltère %>
-      <%= f.number_field :developpe_haltere2 %></div>
+      <%= f.number_field :developpe_haltere2, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :developpe_haltere2re %></div>
 
       <div class= "lef"><%= f.label :linéaire_jammer %>
-      <%= f.number_field :lineaire_jammer %></div>
+      <%= f.number_field :lineaire_jammer, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :lineaire_jammerre %></div>
 
       <div class= "lef"><%= f.label :elévations_latérales %>
-      <%= f.number_field :elevations_lat %></div>
+      <%= f.number_field :elevations_lat, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :elevations_latre %></div>
 
 
       <div class= "lef"><%= f.label :clean_et_presse %>
-      <%= f.number_field :clean_presse %></div>
+      <%= f.number_field :clean_presse, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :clean_pressere %></div>
 
       <div class= "lef"><%= f.label :développé_militaire %>
-      <%= f.number_field :developpe_militaire %></div>
+      <%= f.number_field :developpe_militaire, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :developpe_militairere %></div>
 
       <div class= "lef"><%= f.label :car_driver %>
-      <%= f.number_field :car_driver %></div>
+      <%= f.number_field :car_driver, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :car_driverre %></div>
 
       <div class= "lef"><%= f.label :Rowing_barre_version_delt_arrière %>
-      <%= f.number_field :rowing_delt %></div>
+      <%= f.number_field :rowing_delt, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :rowing_deltre %></div>
 
       <div class= "lef"><%= f.label :Elévations_delt_assis_et_courbé %>
-      <%= f.number_field :elevations_delt %></div>
+      <%= f.number_field :elevations_delt, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :elevations_deltre %></div>
 
       <div class= "lef"><%= f.label :haltères_allongé_un_bras_latéral_arrière %>
-      <%= f.number_field :halteres_allonge %></div>
+      <%= f.number_field :halteres_allonge, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :halteres_allongere %></div>
 
@@ -242,32 +242,32 @@
       <div class="trips", id= "ts"><h2>Triceps</h2>
 
       <div class= "lef"><%= f.label :haltere_au_front %>
-      <%= f.number_field :haltere_au_font1 %></div>
+      <%= f.number_field :haltere_au_font1, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :haltere_au_fontre %></div>
 
       <div class= "lef"><%= f.label :EZ_barre_front_décliné %>
-      <%= f.number_field :ez_barre_front %></div>
+      <%= f.number_field :ez_barre_front, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :ez_barre_frontre %></div>
 
       <div class= "lef"><%= f.label :Dip_version_tricep %>
-      <%= f.number_field :dip_tricep %></div>
+      <%= f.number_field :dip_tricep, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :dip_tricepre %></div>
 
       <div class= "lef"><%= f.label :dip_de_banc %>
-      <%= f.number_field :dip_de_banc %></div>
+      <%= f.number_field :dip_de_banc, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :dip_de_bancre %></div>
 
       <div class= "lef"><%= f.label :body_up %>
-      <%= f.number_field :body_up %></div>
+      <%= f.number_field :body_up, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :body_upre %></div>
 
       <div class= "lef"><%= f.label :Extensions_au_dessus_de_la_tête %>
-      <%= f.number_field :extensions_tete %></div>
+      <%= f.number_field :extensions_tete, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :extensions_tetere %></div>
 
@@ -278,33 +278,33 @@
 
       <div class= "bics", id= "bs"><h2>Biceps</h2>
       <div class= "lef"><%= f.label :bicep_curl %>
-      <%= f.number_field :bicep_curl1 %></div>
+      <%= f.number_field :bicep_curl1, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :bicep_curlre %></div>
       
 
       <div class= "lef"><%= f.label :hammer %>
-      <%= f.number_field :hammer1 %></div>
+      <%= f.number_field :hammer1, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :hammerre %></div>
 
       <div class= "lef"><%= f.label :hammer_curl_incliné %>
-      <%= f.number_field :hammer_incline %></div>
+      <%= f.number_field :hammer_incline, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :hammer_inclinere %></div>
 
       <div class= "lef"><%= f.label :zottman_curl %>
-      <%= f.number_field :zottoman %></div>
+      <%= f.number_field :zottoman, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :zottomanre %></div>
 
       <div class= "lef"><%= f.label :curl_concentration %>
-      <%= f.number_field :concentration %></div>
+      <%= f.number_field :concentration, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :concentrationre %></div>
 
       <div class= "lef"><%= f.label :chin_up %>
-      <%= f.number_field :chin_up1 %></div>
+      <%= f.number_field :chin_up1, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :chin_up1re %></div>
 
@@ -322,33 +322,33 @@
 
 
       <div class= "lef"><%= f.label :landmine_180s %>
-      <%= f.number_field :landmine %></div>
+      <%= f.number_field :landmine, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :landminere %></div>
 
        <div class= "lef"><%= f.label :araignée_rampement %>
-      <%= f.number_field :araignee %></div>
+      <%= f.number_field :araignee, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :araigneere %></div>
 
        <div class= "lef"><%= f.label :relevés_de_jambes %>
-      <%= f.number_field :releves_jambes %></div>
+      <%= f.number_field :releves_jambes, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :releves_jambesre %></div>
 
        <div class= "lef"><%= f.label :plank %>
-      <%= f.number_field :plank %></div>
+      <%= f.number_field :plank, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :plankre %></div>
 
       <div class= "lef"><%= f.label :haltère_courbure_latérale %>
-      <%= f.number_field :haltere_corbure %></div>
+      <%= f.number_field :haltere_corbure, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :haltere_corburere %></div>
 
       <div class= "lef"><%= f.label :relevé_de_jambes_en_suspension
  %>
-      <%= f.number_field :releves_suspension %></div>
+      <%= f.number_field :releves_suspension, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :releves_suspensionre %></div>
 
@@ -357,24 +357,24 @@
 <div class= "cous"><h2>Trapèzes/cou</h2>
 
       <div class= "lef"><%= f.label :Haussement_épaules_haltères %>
-      <%= f.number_field :haussement_epaules %></div>
+      <%= f.number_field :haussement_epaules, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :haussement_epaulesre %></div>
 
       <div class= "lef"><%= f.label :rowing_debout_haltères %>
-      <%= f.number_field :rowing_debout %></div>
+      <%= f.number_field :rowing_debout, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :rowing_deboutre %></div>
 
       <div class= "lef"><%= f.label :couché_sur_le_ventre_la_plaque_résistance
  %>
-      <%= f.number_field :couche_plaque %></div>
+      <%= f.number_field :couche_plaque, :placeholder => 'kg' %></div>
       <div class= "rig"><%= f.label :Reps_et_sets %>
       <%= f.text_field :couche_plaquere %></div>
 
 
   </div>
-  
   </div>
+  
   <%= f.submit "Post", class: "btn btn-large btn-primary" %>
 <% end %>
